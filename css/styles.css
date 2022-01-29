@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import '../lib/index.css';
+
+:root {
+  --color-primary: #5d3fd3;
+  --color-secondary: #8d78e0;
+  --color-disabled: #beb2ed;
+  --color-text-primary: #100e2c;
+  --color-text-secondary: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
