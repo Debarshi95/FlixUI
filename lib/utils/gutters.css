@@ -1,3 +1,9 @@
+.p-none {
+  padding: 0;
+}
+.p-1 {
+  padding: 1rem;
+}
 .p-2 {
   padding: 2rem;
 }
@@ -23,6 +29,10 @@
   padding: 16rem;
 }
 
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .px-2 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -56,6 +66,10 @@
   padding-right: 16rem;
 }
 
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-2 {
   padding-top: 2rem;
 
@@ -93,6 +107,9 @@
   padding-bottom: 16rem;
 }
 
+.pl-1 {
+  padding-left: 1rem;
+}
 .pl-2 {
   padding-left: 2rem;
 }
@@ -118,6 +135,9 @@
   padding-left: 16rem;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
 .pt-2 {
   padding-top: 2rem;
 }
@@ -143,6 +163,9 @@
   padding-top: 16rem;
 }
 
+.pr-1 {
+  padding-right: 1rem;
+}
 .pr-2 {
   padding-right: 2rem;
 }
@@ -166,6 +189,10 @@
 }
 .pr-16 {
   padding-right: 16rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 .pb-2 {
@@ -195,6 +222,12 @@
 
 /* ============================Margin classes============================================================ */
 
+.m-none {
+  margin: 0;
+}
+.m-1 {
+  margin: 1rem;
+}
 .m-2 {
   margin: 2rem;
 }
@@ -220,6 +253,10 @@
   margin: 16rem;
 }
 
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mx-2 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -253,6 +290,10 @@
   margin-right: 16rem;
 }
 
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -286,6 +327,10 @@
   margin-bottom: 16rem;
 }
 
+.ml-1 {
+  margin-left: 1rem;
+}
+
 .ml-2 {
   margin-left: 2rem;
 }
@@ -311,6 +356,9 @@
   margin-left: 16rem;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
 .mt-2 {
   margin-top: 2rem;
 }
@@ -336,6 +384,10 @@
   margin-top: 16rem;
 }
 
+.mr-1 {
+  margin-right: 1rem;
+}
+
 .mr-2 {
   margin-right: 2rem;
 }
@@ -359,6 +411,10 @@
 }
 .mr-16 {
   margin-right: 16rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .mb-2 {

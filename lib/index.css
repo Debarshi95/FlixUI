@@ -1,3 +1,21 @@
 @import './utils/display.css';
 @import './utils/width.css';
 @import './utils/gutters.css';
+@import './utils/bg.css';
+@import './utils/height.css';
+@import './components/typography/index.css';
+
+:root {
+  --color-primary: #5d3fd3;
+  --color-secondary: #8d78e0;
+  --color-disabled: #beb2ed;
+  --color-text-primary: #100e2c;
+  --color-text-secondary: #fff;
+  --color-black: #000;
+  --color-white: #fff;
+
+  --size-sm: 32rem;
+  --size-md: 48rem;
+  --size-lg: 56rem;
+  --size-xl: 64rem;
+}

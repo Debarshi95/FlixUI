@@ -55,3 +55,9 @@
 .d-inline-block {
   display: inline-block;
 }
+.d-none {
+  display: none;
+}
+.d-initial {
+  display: initial;
+}

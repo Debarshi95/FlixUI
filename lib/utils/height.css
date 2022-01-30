@@ -63,6 +63,9 @@
 .h-screen {
   height: 100vh;
 }
+.h-content-fit {
+  height: fit-content;
+}
 
 .max-h-screen {
   max-height: 100vh;
