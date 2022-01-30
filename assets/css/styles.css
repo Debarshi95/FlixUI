@@ -24,3 +24,6 @@ ul {
   margin: 0;
   padding: 0;
 }
+.navbar {
+  border-bottom: 0.12rem solid var(--color-primary);
+}

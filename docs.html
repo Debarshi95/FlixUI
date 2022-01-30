@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlixUI | Documentation</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,7 +14,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>FlixUI</title>
   </head>
   <body>
     <main>
@@ -35,24 +36,28 @@
           </li>
         </ul>
       </nav>
-      <section
-        class="max-w-90 mx-auto bg-primary p-4 h-24 d-flex flex-col items-center content-center"
-      >
-        <h1 class="text-white">Build Your UI Faster</h1>
-        <div>
-          <h4>Fully customizable components.</h4>
-          <h4>Copy and paste the components at one click.</h4>
-        </div>
-        <button>Get Started</button>
-      </section>
-
-      <section class="max-w-90 mx-auto bg-primary p-4 h-24 my-2">
-        <h1 class="text-white">Installation</h1>
-        <div>
-          <h4>Fully customizable components.</h4>
-          <h4>Copy and paste the components at one click.</h4>
-        </div>
-      </section>
+      <div class="grid-container min-h-screen p-1">
+        <aside class="w-full">
+          <div class="d-flex content-between">
+            <h4 class="m-none">Components</h4>
+            <span class="btn-toggle">
+              <i class="fas fa-chevron-down" id="btn-toggle"></i>
+            </span>
+          </div>
+          <nav id="sidebar-nav" class="d-none">
+            <li>
+              <a href="/">Alert</a>
+            </li>
+            <li>
+              <a href="/">Alert</a>
+            </li>
+            <li>
+              <a href="/">Alert</a>
+            </li>
+          </nav>
+        </aside>
+        <section>Body</section>
+      </div>
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
         <h4>MAde with by Debarshi Bhattacharjee</h4>
         <div>
