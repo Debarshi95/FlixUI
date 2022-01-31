@@ -1,0 +1,33 @@
+.alert {
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alert-success {
+  background-color: var(--color-success);
+  color: var(--color-text-success);
+}
+
+.alert-warning {
+  background-color: var(--color-warning);
+  color: var(--color-text-warning);
+}
+
+.alert-danger {
+  background-color: var(--color-danger);
+  color: var(--color-text-danger);
+}
+
+.alert-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+}
+
+.alert-secondary {
+  background-color: var(--color-secondary);
+}
