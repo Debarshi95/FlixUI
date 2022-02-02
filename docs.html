@@ -39,7 +39,7 @@
       <div class="grid-container min-h-screen p-1">
         <aside class="w-full divider-right mr-2 text-primary text-center">
           <div class="d-flex content-between">
-            <h4 class="m-none">Components</h4>
+            <h5 class="m-none">Components</h5>
             <span class="btn-toggle">
               <i class="fas fa-chevron-down" id="btn-toggle"></i>
             </span>
@@ -58,53 +58,172 @@
         </aside>
         <section>
           <article id="alert" class="mb-2">
-            <h1>Alert without close button</h1>
-            <div class="alert alert-primary mb-1">A primary alert</div>
-            <div class="alert alert-secondary mb-1">A secondary alert</div>
-            <div class="alert alert-success mb-1">A success alert</div>
-            <div class="alert alert-warning mb-1">A warning alert</div>
-            <div class="alert alert-danger mb-1">A danger alert</div>
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2520mb-1%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E"
-                class="w-full code-container"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-          </article>
-          <article id="alert" class="my-2">
-            <h1>Alert with close button</h1>
-            <div class="alert alert-primary mb-1">
-              A primary alert
-              <button
-                type="button"
-                class="icon-btn icon-btn-secondary"
-                id="btn-close-alert"
-              >
-                X
-              </button>
+            <header class="border-bottom mb-2 pb-1">
+              <h1>Alerts</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </header>
+            <div>
+              <h5>Without close button</h5>
+              <div class="border-rounded p-2">
+                <div class="alert alert-primary mb-1">A primary alert</div>
+                <div class="alert alert-secondary mb-1">A secondary alert</div>
+                <div class="alert alert-success mb-1">A success alert</div>
+                <div class="alert alert-warning mb-1">A warning alert</div>
+                <div class="alert alert-danger mb-1">A danger alert</div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2520mb-1%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E"
+                    class="w-full code-container"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
             </div>
-            <code>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520primary%2520alert%250A%2520%2520%253Cbutton%250A%2520%2520%2520%2520type%253D%2522button%2522%250A%2520%2520%2520%2520class%253D%2522icon-btn%2520icon-btn-secondary%2522%250A%2520%2520%2520%2520id%253D%2522btn-close-alert%2522%250A%2520%2520%253E%250A%2520%2520%2520%2520X%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-                class="h-22 w-full code-container"
-              >
-              </iframe>
-              <h2>JavaScript</h2>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=const%2520btnAlert%2520%253D%2520document.querySelector%28%27%2523btn-close-alert%27%29%253B%250A%250AbtnAlert.addEventListener%28%27click%27%252C%2520function%2520%28e%29%2520%257B%250A%2520%2520e.currentTarget.parentNode.style.display%2520%253D%2520%27none%27%253B%250A%257D%29%253B"
-                class="h-14 w-full code-container"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
+            <div class="mt-4">
+              <h5>Alert with close button</h5>
+              <div class="border-rounded p-2">
+                <div class="alert alert-primary mb-1">
+                  A primary alert
+                  <button
+                    type="button"
+                    class="icon-btn icon-btn-secondary"
+                    id="btn-close-alert"
+                  >
+                    X
+                  </button>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520primary%2520alert%250A%2520%2520%253Cbutton%250A%2520%2520%2520%2520type%253D%2522button%2522%250A%2520%2520%2520%2520class%253D%2522icon-btn%2520icon-btn-secondary%2522%250A%2520%2520%2520%2520id%253D%2522btn-close-alert%2522%250A%2520%2520%253E%250A%2520%2520%2520%2520X%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    sandbox="allow-scripts allow-same-origin"
+                    class="h-22 w-full code-container"
+                  >
+                  </iframe>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=const%2520btnAlert%2520%253D%2520document.querySelector%28%27%2523btn-close-alert%27%29%253B%250A%250AbtnAlert.addEventListener%28%27click%27%252C%2520function%2520%28e%29%2520%257B%250A%2520%2520e.currentTarget.parentNode.style.display%2520%253D%2520%27none%27%253B%250A%257D%29%253B"
+                    class="h-14 w-full code-container"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </article>
+
+          <article class="mb-2" id="button">
+            <header class="border-bottom mb-2 pb-1">
+              <h1>Buttons</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </header>
+            <div>
+              <h5>Basic Buttons</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center">
+                  <a href="/">Link Button</a>
+                  <button type="button" class="icon-btn icon-btn-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%252F%2522%253ELink%2520Button%253C%252Fa%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522icon-btn%2520icon-btn-primary%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                    sandbox="allow-scripts allow-same-origin"
+                    class="w-full code-container"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+
+            <div>
+              <h5>Contained Buttons</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center flex-wrap">
+                  <button class="btn btn-primary mr-1 my-1">
+                    Primary Button
+                  </button>
+                  <button class="btn btn-secondary mr-1 my-1">
+                    Secondary Button
+                  </button>
+                  <button class="btn btn-success mr-1 my-1">
+                    Success Button
+                  </button>
+                  <button class="btn btn-warning mr-1 my-1">
+                    Warning Button
+                  </button>
+                  <button class="btn btn-danger mr-1 my-1">
+                    Danger Button
+                  </button>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520Secondary%2520Button%250A%253C%252Fbutton%253E"
+                    class="w-full code-container"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+
+            <div>
+              <h5>Outlined Buttons</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center flex-wrap">
+                  <button class="btn btn-primary-outlined mr-1 my-1">
+                    Primary Button
+                  </button>
+                  <button class="btn btn-secondary-outlined mr-1 my-1">
+                    Secondary Button
+                  </button>
+                  <button class="btn btn-success-outlined mr-1 my-1">
+                    Success Button
+                  </button>
+                  <button class="btn btn-warning-outlined mr-1 my-1">
+                    Warning Button
+                  </button>
+                  <button class="btn btn-danger-outlined mr-1 my-1">
+                    Danger Button
+                  </button>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253E%250A%2520%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outlined%2522%253E%250A%2520%2520%2520Secondary%2520Button%250A%253C%252Fbutton%253E"
+                    sandbox="allow-scripts allow-same-origin"
+                    class="w-full code-container"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+
+            <div>
+              <h5>Floating Action Button</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center">
+                  <button class="btn-fav-primary mr-2">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                  <button class="btn-fav-secondary">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-fav-primary%2522%253E%250A%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-fav-secondary%2522%253E%250A%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                    sandbox="allow-scripts allow-same-origin"
+                    class="w-full code-container"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
           </article>
         </section>
       </div>
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
-        <h4>MAde with by Debarshi Bhattacharjee</h4>
+        <h5>MAde with by Debarshi Bhattacharjee</h5>
         <div>
           <a href="/https://github.com/Debarshi95">
             <i class="fab fa-github"></i>

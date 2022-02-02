@@ -32,8 +32,9 @@ li {
   border-bottom: 0.12rem solid var(--color-primary);
 }
 
-article {
-  border: 0.12rem solid #bdbdbd;
+article,
+code {
+  /* border: 0.12rem solid #bdbdbd; */
   padding: 1rem;
   border-radius: 0.25rem;
 }
