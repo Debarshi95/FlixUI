@@ -1,0 +1,9 @@
+.avatar {
+  object-fit: cover;
+}
+.avatar.avatar-rounded {
+  border-radius: 50%;
+}
+.avatar.avatar-square {
+  border: 2.5rem;
+}

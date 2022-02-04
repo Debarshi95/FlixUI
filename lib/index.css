@@ -6,6 +6,7 @@
 @import './components/typography/index.css';
 @import './components/alert/index.css';
 @import './components/button/index.css';
+@import './components/avatar/index.css';
 
 :root {
   --color-primary: #5d3fd3;
