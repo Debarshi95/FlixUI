@@ -1,0 +1,26 @@
+.grid-container {
+  grid-template-rows: auto 1fr;
+  display: grid;
+  column-gap: 2rem;
+}
+.code-container {
+  background-color: #fafafa;
+  /* max-height: 14rem; */
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-toggle {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 1fr;
+  }
+  #sidebar-nav {
+    display: block;
+  }
+  .divider-right {
+    border-right: 0.15rem solid var(--color-primary);
+  }
+}

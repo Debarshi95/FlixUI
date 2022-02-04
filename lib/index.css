@@ -4,15 +4,25 @@
 @import './utils/bg.css';
 @import './utils/height.css';
 @import './components/typography/index.css';
+@import './components/alert/index.css';
 
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
   --color-disabled: #beb2ed;
-  --color-text-primary: #100e2c;
-  --color-text-secondary: #fff;
   --color-black: #000;
   --color-white: #fff;
+
+  --color-success: #84f1c9;
+  --color-warning: #ffe7c5;
+  --color-danger: #fcc5c5;
+
+  --color-text-success: #3b7052;
+  --color-text-warning: #ffb140;
+  --color-text-danger: #e76649;
+
+  --color-text-primary: #100e2c;
+  --color-text-secondary: #fff;
 
   --size-sm: 32rem;
   --size-md: 48rem;

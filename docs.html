@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlixUI | Documentation</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/docs.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/docs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -37,7 +37,7 @@
         </ul>
       </nav>
       <div class="grid-container min-h-screen p-1">
-        <aside class="w-full">
+        <aside class="w-full divider-right mr-2 text-primary text-center">
           <div class="d-flex content-between">
             <h4 class="m-none">Components</h4>
             <span class="btn-toggle">
@@ -46,17 +46,62 @@
           </div>
           <nav id="sidebar-nav" class="d-none">
             <li>
-              <a href="/">Alert</a>
+              <a href="/docs.html#alert">Alert</a>
             </li>
             <li>
-              <a href="/">Alert</a>
+              <a href="/docs.html#avatar">Avatar</a>
             </li>
             <li>
-              <a href="/">Alert</a>
+              <a href="/docs.html#badge">Badge</a>
             </li>
           </nav>
         </aside>
-        <section>Body</section>
+        <section>
+          <article id="alert" class="mb-2">
+            <h1>Alert without close button</h1>
+            <div class="alert alert-primary mb-1">A primary alert</div>
+            <div class="alert alert-secondary mb-1">A secondary alert</div>
+            <div class="alert alert-success mb-1">A success alert</div>
+            <div class="alert alert-warning mb-1">A warning alert</div>
+            <div class="alert alert-danger mb-1">A danger alert</div>
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2520mb-1%2522%253EA%2520primary%2520alert%253C%252Fdiv%253E"
+                class="w-full code-container"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </article>
+          <article id="alert" class="my-2">
+            <h1>Alert with close button</h1>
+            <div class="alert alert-primary mb-1">
+              A primary alert
+              <button
+                type="button"
+                class="icon-btn icon-btn-secondary"
+                id="btn-close-alert"
+              >
+                X
+              </button>
+            </div>
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520primary%2520alert%250A%2520%2520%253Cbutton%250A%2520%2520%2520%2520type%253D%2522button%2522%250A%2520%2520%2520%2520class%253D%2522icon-btn%2520icon-btn-secondary%2522%250A%2520%2520%2520%2520id%253D%2522btn-close-alert%2522%250A%2520%2520%253E%250A%2520%2520%2520%2520X%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+                class="h-22 w-full code-container"
+              >
+              </iframe>
+              <h2>JavaScript</h2>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=const%2520btnAlert%2520%253D%2520document.querySelector%28%27%2523btn-close-alert%27%29%253B%250A%250AbtnAlert.addEventListener%28%27click%27%252C%2520function%2520%28e%29%2520%257B%250A%2520%2520e.currentTarget.parentNode.style.display%2520%253D%2520%27none%27%253B%250A%257D%29%253B"
+                class="h-14 w-full code-container"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </article>
+        </section>
       </div>
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
         <h4>MAde with by Debarshi Bhattacharjee</h4>
@@ -75,6 +120,7 @@
         </div>
       </footer>
     </main>
-    <script src="./assets/js/index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/docs.js"></script>
   </body>
 </html>
