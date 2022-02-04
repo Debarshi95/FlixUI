@@ -1,0 +1,49 @@
+.avatar-round img,
+.avatar-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.avatar-round {
+  border-radius: 50%;
+}
+
+.avatar-round.avatar-round-lg {
+  height: 10rem;
+  width: 10rem;
+}
+
+.avatar-round.avatar-round-md {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+.avatar-round.avatar-round-sm {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.avatar-square {
+  background: #f7f7f7;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.avatar-square.avatar-square-lg {
+  font-size: 2.75rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.avatar-square.avatar-square-md {
+  height: 7.5rem;
+  width: 7.5rem;
+  font-size: 2rem;
+}
+.avatar-square.avatar-square-sm {
+  height: 4.5rem;
+  width: 4.5rem;
+  font-size: 1.75rem;
+}
