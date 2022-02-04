@@ -57,7 +57,7 @@
           </nav>
         </aside>
         <div>
-          <section id="alert" class="mb-4 px-2">
+          <section id="alert" class="mb-4 px-0">
             <header class="border-bottom">
               <h1>Alerts</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -113,7 +113,7 @@
             </article>
           </section>
 
-          <section id="button" class="mb-4 px-2">
+          <section id="button" class="mb-4 px-0">
             <header class="border-bottom">
               <h1>Buttons</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -122,7 +122,7 @@
             <article>
               <h5>Basic Buttons</h5>
               <div class="border-rounded p-2">
-                <div class="d-flex content-center items-center">
+                <div class="d-flex content-center items-center mb-2">
                   <a href="/">Link Button</a>
                   <button type="button" class="icon-btn icon-btn-primary">
                     <i class="fas fa-shopping-cart"></i>
@@ -142,7 +142,7 @@
             <article>
               <h5>Contained Buttons</h5>
               <div class="border-rounded p-2">
-                <div class="d-flex content-center items-center flex-wrap">
+                <div class="d-flex content-center items-center flex-wrap mb-2">
                   <button class="btn btn-primary mr-1 my-1">
                     Primary Button
                   </button>
@@ -173,7 +173,7 @@
             <article>
               <h5>Outlined Buttons</h5>
               <div class="border-rounded p-2">
-                <div class="d-flex content-center items-center flex-wrap">
+                <div class="d-flex content-center items-center flex-wrap mb-2">
                   <button class="btn btn-primary-outlined mr-1 my-1">
                     Primary Button
                   </button>
@@ -204,7 +204,7 @@
             <article>
               <h5>Floating Action Button</h5>
               <div class="border-rounded p-2">
-                <div class="d-flex content-center items-center">
+                <div class="d-flex content-center items-center mb-2 flex-wrap">
                   <button class="btn-fav-primary mr-2">
                     <i class="fas fa-plus"></i>
                   </button>
@@ -224,11 +224,61 @@
             </article>
           </section>
 
-          <section id="avatar" class="mb-4 px-2">
-            <header>
+          <section id="avatar" class="mb-4 px-0">
+            <header class="border-bottom">
               <h1>Avatar</h1>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </header>
+
+            <article>
+              <h5>Round Avatars</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center mb-2 flex-wrap">
+                  <div class="avatar-round avatar-round-lg mr-2">
+                    <img src="./assets/img/user-1.jpg" alt="JohnDoe" />
+                  </div>
+                  <div class="avatar-round avatar-round-md mr-2">
+                    <img src="./assets/img/user-3.jpg" alt="Jane Dane" />
+                  </div>
+                  <div class="avatar-round avatar-round-sm">
+                    <img src="./assets/img/user-2.jpg" alt="JohnDoe-2" />
+                  </div>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-round%2520avatar-round-lg%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-round%2520avatar-round-md%2522%253E%250A%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-3.jpg%2522%2520alt%253D%2522Jane%2520Dane%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                    class="w-full code-container"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
+
+            <article>
+              <h5>Text Avatars</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center items-center mb-2 flex-wrap">
+                  <div class="avatar-square avatar-square-lg mr-2">
+                    <p>DB</p>
+                  </div>
+                  <div class="avatar-square avatar-square-md mr-2">
+                    <p>JF</p>
+                  </div>
+                  <div class="avatar-square avatar-square-sm">
+                    <p>EM</p>
+                  </div>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-square%2520avatar-square-lg%2522%253E%250A%2520%2520%253Cp%253EDB%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-square%2520avatar-square-md%2522%253E%250A%2520%2520%253Cp%253EJF%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                    class="w-full code-container"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
           </section>
         </div>
       </div>

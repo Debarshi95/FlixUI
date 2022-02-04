@@ -31,10 +31,3 @@ li {
 .navbar {
   border-bottom: 0.12rem solid var(--color-primary);
 }
-
-article,
-code {
-  /* border: 0.12rem solid #bdbdbd; */
-  padding: 1rem;
-  border-radius: 0.25rem;
-}
