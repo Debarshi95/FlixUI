@@ -5,6 +5,7 @@
 @import './utils/height.css';
 @import './components/typography/index.css';
 @import './components/alert/index.css';
+@import './components/button/index.css';
 
 :root {
   --color-primary: #5d3fd3;
@@ -21,7 +22,7 @@
   --color-text-warning: #ffb140;
   --color-text-danger: #e76649;
 
-  --color-text-primary: #100e2c;
+  --color-text-primary: #323232;
   --color-text-secondary: #fff;
 
   --size-sm: 32rem;

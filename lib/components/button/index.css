@@ -1,0 +1,92 @@
+.icon-btn {
+  outline: none;
+  border: 0;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icon-btn.icon-btn-primary {
+  color: var(--color-text-primary);
+}
+
+.icon-btn.icon-btn-secondary {
+  color: var(--color-text-secondary);
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 0.25rem;
+}
+.btn.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+}
+
+.btn.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
+}
+.btn.btn-success {
+  background-color: var(--color-success);
+  color: var(--color-text-success);
+}
+
+.btn.btn-warning {
+  background-color: var(--color-warning);
+  color: var(--color-text-warning);
+}
+
+.btn.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-text-danger);
+}
+
+.btn.btn-primary-outlined {
+  border: 0.125rem solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn.btn-secondary-outlined {
+  border: 0.125rem solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+.btn.btn-success-outlined {
+  border: 0.125rem solid var(--color-success);
+  color: var(--color-text-success);
+}
+
+.btn.btn-warning-outlined {
+  border: 0.125rem solid var(--color-warning);
+  color: var(--color-text-warning);
+}
+
+.btn.btn-danger-outlined {
+  border: 0.125rem solid var(--color-danger);
+  color: var(--color-text-danger);
+}
+
+.btn-fav-primary {
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+  padding: 1rem;
+  outline: none;
+  border: 0;
+}
+
+.btn-fav-secondary {
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  padding: 1rem;
+  outline: none;
+  border: 0;
+}

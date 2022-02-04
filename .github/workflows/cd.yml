@@ -1,8 +1,6 @@
 name: Production deploy
 
 on:
-  pull_request:
-    branches: [develop]
   push:
     branches: [develop, master]
 
