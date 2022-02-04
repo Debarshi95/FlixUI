@@ -7,7 +7,7 @@
 @import './components/alert/index.css';
 @import './components/button/index.css';
 @import './components/avatar/index.css';
-
+@import './components/badge/index.css';
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
