@@ -1,18 +1,18 @@
-@import './utils/display.css';
-@import './utils/width.css';
-@import './utils/gutters.css';
-@import './utils/bg.css';
-@import './utils/height.css';
-@import './components/typography/index.css';
-@import './components/alert/index.css';
-@import './components/button/index.css';
-@import './components/avatar/index.css';
-
+@import "./utils/display.css";
+@import "./utils/width.css";
+@import "./utils/gutters.css";
+@import "./utils/bg.css";
+@import "./utils/height.css";
+@import "./components/typography/index.css";
+@import "./components/alert/index.css";
+@import "./components/button/index.css";
+@import "./components/avatar/index.css";
+@import "./components/badge/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
   --color-disabled: #beb2ed;
-  --color-black: #000;
+  --color-black: #3e4152;
   --color-white: #fff;
 
   --color-success: #84f1c9;
@@ -30,4 +30,12 @@
   --size-md: 48rem;
   --size-lg: 56rem;
   --size-xl: 64rem;
+}
+
+.border-none {
+  border: 0;
+}
+
+.border-b-primary-1 {
+  border-bottom: 1.5px solid var(--color-black);
 }
