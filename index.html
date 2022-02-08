@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./lib/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -16,56 +17,74 @@
   </head>
   <body>
     <main>
-      <nav class="d-flex items-center mx-auto">
+      <nav class="d-flex items-center mx-auto border-b-primary-1 bg-secondary">
         <ul>
           <li>
-            <a href="/" class="d-inline-block p-2">FlixUI</a>
+            <a href="/" class="d-inline-block p-2"><h5>FlixUI</h5></a>
           </li>
         </ul>
         <ul class="d-flex ml-auto">
           <li>
-            <a href="/docs.html" class="d-inline-block mr-2">Documentation</a>
+            <a href="/docs.html" class="d-inline-block mr-2"
+              ><p>Documentation</p></a
+            >
           </li>
           <li>
             <a
               href="/https://github.com/Debarshi95/FlixUI"
               class="d-inline-block mr-2"
-              >Github</a
+            >
+              <p>Github</p></a
             >
           </li>
         </ul>
       </nav>
       <section
-        class="max-w-90 mx-auto bg-primary p-4 h-24 d-flex flex-col items-center content-center"
+        class="max-w-90 mx-auto p-4 min-h-24 d-flex flex-col items-center content-center my-4"
       >
-        <h1 class="text-white">Build Your UI Faster</h1>
+        <h1 class="text-center mb-2">Build Your UI Faster</h1>
         <div>
-          <h4>Fully customizable components.</h4>
-          <h4>Copy and paste the components at one click.</h4>
+          <h5 class="text-center mb-1">Fully customizable components.</h5>
+          <h5 class="text-center">
+            Copy and paste the components at one click.
+          </h5>
         </div>
-        <button>Get Started</button>
+        <button class="btn btn-primary mt-2 min-w-12 py-4">Get Started</button>
       </section>
 
-      <section class="max-w-90 mx-auto bg-primary p-4 h-24 my-2">
-        <h1 class="text-white">Installation</h1>
+      <section
+        class="max-w-90 mx-auto p-4 my-2 d-flex content-center items-center flex-col"
+      >
+        <h1 class="mb-2">Installation</h1>
         <div>
-          <h4>Fully customizable components.</h4>
-          <h4>Copy and paste the components at one click.</h4>
+          <h5 class="text-center mb-2 max-w-80 mx-auto">
+            Copy and paste the code in the head tag of your html document. So
+            that you can style your components by just adding class names to
+            your html elements.
+          </h5>
+          <code>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=auto&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=65px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522.%252Flib%252Findex.css%2522%2520%252F%253E"
+              class="h-14 w-full border-none d-block"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </code>
         </div>
       </section>
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
-        <h4>MAde with by Debarshi Bhattacharjee</h4>
+        <h5 class="mt-2">Made with by Debarshi Bhattacharjee</h5>
         <div>
           <a href="/https://github.com/Debarshi95">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github text-16"></i>
           </a>
           <a
             href="/https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164"
           >
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin text-16"></i>
           </a>
           <a href="https://twitter.com/debarshib13">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter text-16"></i>
           </a>
         </div>
       </footer>
