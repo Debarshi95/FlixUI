@@ -74,13 +74,28 @@
 
 .topnav {
   max-width: 100%;
-  padding: 1rem 0;
 }
 .topnav a {
   font-size: 1.2rem;
+  color: var(--color-black);
+  padding: 1rem;
 }
 #sidebar-nav {
   display: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+#sidebar-nav a:hover {
+  background-color: #bdbdbd;
 }
 
 @media screen and (min-width: 600px) {
@@ -95,7 +110,11 @@
   }
 
   .topnav a {
-    font-size: 1.45rem;
-    padding: 1rem;
+    font-size: 1.35rem;
+    padding: 1rem 3rem;
+  }
+
+  .navlink {
+    padding: 0.35rem 1rem;
   }
 }
