@@ -29,6 +29,9 @@
   padding: 16rem;
 }
 
+.py-half {
+  padding: 8px;
+}
 .px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
