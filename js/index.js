@@ -1,12 +1,13 @@
-const btnToggle = document.querySelector('#btn-toggle');
-const sidebarList = document.querySelector('#sidebar-nav');
+const btnToggle = document.querySelector("#btn-toggle");
+const sidebarList = document.querySelector("#sidebar-nav");
 
-btnToggle.addEventListener('click', function () {
-  const classes = sidebarList.className.split(' ');
-  if (classes.includes('d-none')) {
-    sidebarList.classList.remove('d-none');
+btnToggle.addEventListener("click", function () {
+  console.log({ sidebarList });
+  let display = sidebarList.style.display;
+  if (display === "none") {
+    sidebarList.style.display = "block";
   } else {
-    sidebarList.classList.add('d-none');
+    sidebarList.style.display = "none";
   }
   //   this.style.transform = 'rotate(180deg)';
 });

@@ -26,9 +26,6 @@
     grid-template-columns: 15rem 1fr;
     grid-template-rows: 1fr;
   }
-  #sidebar-nav {
-    display: block;
-  }
   .divider-right {
     border-right: 0.15rem solid var(--color-primary);
   }

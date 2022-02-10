@@ -27,6 +27,3 @@ li {
   display: block;
   padding: 0.25rem;
 }
-.navbar {
-  border-bottom: 0.12rem solid var(--color-primary);
-}

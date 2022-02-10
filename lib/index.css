@@ -8,6 +8,7 @@
 @import "./components/button/index.css";
 @import "./components/avatar/index.css";
 @import "./components/badge/index.css";
+@import "./components/cards/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
@@ -38,4 +39,25 @@
 
 .border-b-primary-1 {
   border-bottom: 1.5px solid var(--color-black);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+
+.top-8 {
+  top: 8px;
+}
+.left-0 {
+  left: 0;
+}
+.right-8 {
+  right: 8px;
 }
