@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <main>
-      <div class="grid-container min-h-screen">
+      <div class="grid-container min-h-screen text-black">
         <aside class="w-full divider-right text-center sticky top navbar p-1">
           <div class="d-flex content-between">
             <h5 class="m-none">Components</h5>
@@ -44,6 +44,9 @@
             </span>
           </div>
           <nav id="sidebar-nav">
+            <li>
+              <a href="/docs.html#typography" class="navlink">Typography</a>
+            </li>
             <li>
               <a href="/docs.html#alert" class="navlink">Alert</a>
             </li>
@@ -59,6 +62,34 @@
           </nav>
         </aside>
         <div>
+          <section id="typography" class="mb-4">
+            <header class="border-bottom p-1">
+              <h1 class="mb-1">Typography</h1>
+              <p>
+                FlixUI uses
+                <span class="text-primary text-bold text-12">Lato</span> as its
+                default font family.
+              </p>
+            </header>
+
+            <article>
+              <div class="my-2">
+                <h5 class="mb-1">Headings</h5>
+                <p>
+                  You can check the font-sizes we have used for headings below:
+                </p>
+              </div>
+              <div class="border-rounded p-2">
+                <h1 class="text-center mb-1">Heading 1</h1>
+                <h2 class="text-center mb-1">Heading 2</h2>
+                <h3 class="text-center mb-1">Heading 3</h3>
+                <h4 class="text-center mb-1">Heading 4</h4>
+                <h5 class="text-center mb-1">Heading 5</h5>
+                <h6 class="text-center">Heading 6</h6>
+              </div>
+            </article>
+          </section>
+
           <section id="alert" class="mb-4">
             <header class="border-bottom">
               <h1>Alerts</h1>
@@ -327,7 +358,7 @@
             </article>
           </section>
 
-          <section class="cards" id="card">
+          <section class="cards mb-4" id="card">
             <header class="border-bottom">
               <h1>Cards</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -512,18 +543,18 @@
       </div>
 
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
-        <h5 class="mt-2">Made with by Debarshi Bhattacharjee</h5>
+        <h5 class="mt-2 text-black">Made by Debarshi Bhattacharjee</h5>
         <div>
           <a href="/https://github.com/Debarshi95">
-            <i class="fab fa-github text-16"></i>
+            <i class="fab fa-github text-16 text-black"></i>
           </a>
           <a
             href="/https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164"
           >
-            <i class="fab fa-linkedin text-16"></i>
+            <i class="fab fa-linkedin text-16 text-black"></i>
           </a>
           <a href="https://twitter.com/debarshib13">
-            <i class="fab fa-twitter text-16"></i>
+            <i class="fab fa-twitter text-16 text-black"></i>
           </a>
         </div>
       </footer>
