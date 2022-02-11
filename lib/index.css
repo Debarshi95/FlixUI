@@ -10,6 +10,7 @@
 @import "./components/avatar/index.css";
 @import "./components/badge/index.css";
 @import "./components/cards/index.css";
+@import "./components/image/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
