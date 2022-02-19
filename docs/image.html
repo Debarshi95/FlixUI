@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Modal</title>
+    <title>Image</title>
   </head>
   <body>
     <nav
@@ -72,58 +72,34 @@
           </li>
         </nav>
       </aside>
-      <section id="modal" class="mb-2 p-1 flex-1">
+      <section id="image" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Modal</h1>
+          <h1>Image</h1>
           <p class="py-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </header>
         <article>
-          <h5 class="my-2">Simple Modal</h5>
+          <h5 class="my-2">Rouned responsive Images</h5>
           <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div
-                class="modal d-flex content-center items-center d-none"
-                id="modal-root"
-              >
-                <div class="bg-paper w-30 p-2">
-                  <h5 class="text-center">This is a Modal</h5>
-                </div>
+            <div class="p-2 d-flex content-evenly items-center">
+              <div class="image">
+                <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
               </div>
-              <button class="btn btn-primary" id="btn-modal-controller">
-                Open Modal
-              </button>
+              <div class="image image-rounded">
+                <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
+              </div>
             </div>
-
             <code>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522border-rounded%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520content-center%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522modal%2520d-flex%2520content-center%2520items-center%2520d-none%2522%250A%2520%2520%2520%2520%2520%2520%2520id%253D%2522modal-root%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-paper%2520w-30%2520p-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522text-center%2522%253EThis%2520is%2520a%2520Modal%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520id%253D%2522open-modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Open%2520Modal%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                class="h-28 w-full border-none d-block"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </code>
-            <code class="my-2">
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=javascript&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=btnOpenModal.addEventListener%28%2522click%2522%252C%2520function%2520%28%29%2520%257B%250A%2520%2520const%2520%257B%2520body%2520%257D%2520%253D%2520document%253B%250A%2520%2520if%2520%28modal.classList.contains%28%2522d-none%2522%29%29%2520%257B%250A%2520%2520%2520%2520body.classList.add%28%2522modal-open%2522%29%253B%250A%2520%2520%2520%2520modal.classList.remove%28%2522d-none%2522%29%253B%250A%2520%2520%257D%250A%257D%29%253B"
-                class="h-24 w-full border-none d-block"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522image%2520image-rounded%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                class="h-20 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
             </code>
           </div>
         </article>
-        <div class="d-flex content-between text-8">
-          <a
-            href="/docs/button.html"
-            class="btn btn-secondary-outlined text-white"
-            >Card</a
-          >
-          <a href="/docs/modal.html" class="btn btn-secondary-outlined"
-            >Modal</a
-          >
-        </div>
       </section>
     </main>
     <footer class="h-12 bg-secondary d-flex flex-col items-center">
@@ -140,6 +116,5 @@
         </a>
       </div>
     </footer>
-    <script src="/js/modal.js"></script>
   </body>
 </html>
