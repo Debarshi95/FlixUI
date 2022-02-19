@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import "./utils/display.css";
 @import "./utils/width.css";
 @import "./utils/gutters.css";
@@ -8,6 +9,7 @@
 @import "./components/button/index.css";
 @import "./components/avatar/index.css";
 @import "./components/badge/index.css";
+@import "./components/cards/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
@@ -22,7 +24,8 @@
   --color-text-success: #3b7052;
   --color-text-warning: #ffb140;
   --color-text-danger: #e76649;
-
+  --color-paper: #fafafa;
+  --color-paper: #bdbdbd;
   --color-text-primary: #323232;
   --color-text-secondary: #fff;
 
@@ -38,4 +41,82 @@
 
 .border-b-primary-1 {
   border-bottom: 1.5px solid var(--color-black);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+
+.top-8 {
+  top: 8px;
+}
+.left-0 {
+  left: 0;
+}
+.right-8 {
+  right: 8px;
+}
+.top-16 {
+  top: 1rem;
+}
+.navbar {
+  min-height: 4rem;
+  background-color: var(--color-black);
+  color: var(--color-text-secondary);
+  top: 0;
+  max-width: 100vw;
+}
+
+.topnav {
+  max-width: 100%;
+}
+.topnav a {
+  font-size: 1.2rem;
+  color: var(--color-black);
+  padding: 1rem;
+}
+#sidebar-nav {
+  display: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+#sidebar-nav a:hover {
+  background-color: #bdbdbd;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    max-height: 100vh;
+    margin-right: 2rem;
+    background-color: transparent;
+    color: var(--color-black);
+  }
+  #sidebar-nav {
+    display: block;
+  }
+
+  .topnav a {
+    font-size: 1.35rem;
+    padding: 1rem 3rem;
+  }
+
+  .navlink {
+    padding: 0.35rem 1rem;
+  }
 }

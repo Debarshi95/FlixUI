@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-
 html {
   scroll-behavior: smooth;
 }
@@ -13,11 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-text-primary);
-  font-weight: 600;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -25,8 +18,8 @@ ul {
 }
 li {
   display: block;
-  padding: 0.25rem;
+  padding: 6px;
 }
-.navbar {
-  border-bottom: 0.12rem solid var(--color-primary);
+a {
+  text-decoration: none;
 }

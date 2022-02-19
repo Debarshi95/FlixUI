@@ -17,52 +17,79 @@
     />
   </head>
   <body>
+    <nav class="d-flex items-center topnav border-b-primary-1 bg-secondary">
+      <ul>
+        <li>
+          <a href="/" class="navlink">FlixU</a>
+        </li>
+      </ul>
+      <ul class="d-flex ml-auto">
+        <li>
+          <a href="/docs.html" class="navlink">Documentation</a>
+        </li>
+        <li>
+          <a href="/https://github.com/Debarshi95/FlixUI" class="navlink">
+            Github</a
+          >
+        </li>
+      </ul>
+    </nav>
     <main>
-      <nav class="d-flex items-center mx-auto border-b-primary-1 bg-secondary">
-        <ul>
-          <li>
-            <a href="/" class="d-inline-block px-2"
-              ><p class="text-18">FlixUI</p></a
-            >
-          </li>
-        </ul>
-        <ul class="d-flex ml-auto">
-          <li>
-            <a href="/docs.html" class="d-inline-block mr-2"
-              ><p class="text-12">Documentation</p></a
-            >
-          </li>
-          <li>
-            <a
-              href="/https://github.com/Debarshi95/FlixUI"
-              class="d-inline-block mr-2"
-            >
-              <p class="text-12">Github</p></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="grid-container min-h-screen p-1">
-        <aside class="w-full divider-right mr-2 text-primary text-center">
+      <div class="grid-container min-h-screen text-black">
+        <aside class="w-full divider-right text-center sticky top navbar p-1">
           <div class="d-flex content-between">
             <h5 class="m-none">Components</h5>
             <span class="btn-toggle">
               <i class="fas fa-chevron-down" id="btn-toggle"></i>
             </span>
           </div>
-          <nav id="sidebar-nav" class="d-none">
+          <nav id="sidebar-nav">
             <li>
-              <a href="/docs.html#alert">Alert</a>
+              <a href="/docs.html#typography" class="navlink">Typography</a>
             </li>
             <li>
-              <a href="/docs.html#avatar">Avatar</a>
+              <a href="/docs.html#alert" class="navlink">Alert</a>
             </li>
             <li>
-              <a href="/docs.html#badge">Badge</a>
+              <a href="/docs.html#avatar" class="navlink">Avatar</a>
+            </li>
+            <li>
+              <a href="/docs.html#badge" class="navlink">Badge</a>
+            </li>
+            <li>
+              <a href="/docs.html#card" class="navlink">Card</a>
             </li>
           </nav>
         </aside>
         <div>
+          <section id="typography" class="mb-4">
+            <header class="border-bottom p-1">
+              <h1 class="mb-1">Typography</h1>
+              <p>
+                FlixUI uses
+                <span class="text-primary text-bold text-12">Lato</span> as its
+                default font family.
+              </p>
+            </header>
+
+            <article>
+              <div class="my-2">
+                <h5 class="mb-1">Headings</h5>
+                <p>
+                  You can check the font-sizes we have used for headings below:
+                </p>
+              </div>
+              <div class="border-rounded p-2">
+                <h1 class="text-center mb-1">Heading 1</h1>
+                <h2 class="text-center mb-1">Heading 2</h2>
+                <h3 class="text-center mb-1">Heading 3</h3>
+                <h4 class="text-center mb-1">Heading 4</h4>
+                <h5 class="text-center mb-1">Heading 5</h5>
+                <h6 class="text-center">Heading 6</h6>
+              </div>
+            </article>
+          </section>
+
           <section id="alert" class="mb-4">
             <header class="border-bottom">
               <h1>Alerts</h1>
@@ -330,21 +357,204 @@
               </div>
             </article>
           </section>
+
+          <section class="cards mb-4" id="card">
+            <header class="border-bottom">
+              <h1>Cards</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </header>
+
+            <article>
+              <h5 class="my-2">Vertical card with text</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex flex-wrap content-between">
+                  <div class="card">
+                    <img
+                      src="./assets/img/user-1.jpg"
+                      alt="JohDoe"
+                      class="card-img"
+                    />
+                    <div class="card-content">
+                      <p>Name: <span> John Doe</span></p>
+                      <p>Profession: <span>Software Developer</span></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./assets/img/user-3.jpg"
+                      alt="Jane Dane"
+                      class="card-img"
+                    />
+                    <div class="card-content">
+                      <p>Name: <span> Jane Dane</span></p>
+                      <p>Profession: <span> Business Analyst</span></p>
+                    </div>
+                  </div>
+                  <div class="card mb-2">
+                    <img
+                      src="./assets/img/user-2.jpg"
+                      alt="JohDoe"
+                      class="card-img"
+                    />
+                    <div class="card-content">
+                      <p>Name: <span>John Williams</span></p>
+                      <p>Profession: <span>Software Developer</span></p>
+                    </div>
+                  </div>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-1.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522JohnDoe%2522%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2509%253Cp%253EName%253A%2520%253Cspan%253E%2520John%2520Doe%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%2509%2509%253Cp%253EProfession%253A%2520%253Cspan%253ESoftware%2520Developer%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    class="h-24 w-full border-none d-block"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
+
+            <article>
+              <h5 class="my-2">Card with Dismiss</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center">
+                  <div class="card relative mb-2">
+                    <img
+                      src="./assets/img/user-1.jpg"
+                      alt="JohDoe"
+                      class="card-img"
+                    />
+                    <i
+                      class="fas fa-times card-close absolute top-8 right-8"
+                    ></i>
+                    <div class="card-content">
+                      <p>Name: <span> John Doe</span></p>
+                      <p>Profession: <span>Software Developer</span></p>
+                    </div>
+                  </div>
+                </div>
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-1.jpg%2522%250A%2520%2520%2520%2520%2520alt%253D%2522JohDoe%2522%250A%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520card-close%2520absolute%2520top-8%2520right-8%2522%253E%253C%252Fi%253E%250A%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%253Cp%253EName%253A%2520%253Cspan%253E%2520John%2520Doe%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%253EProfession%253A%2520%253Cspan%253ESoftware%2520Developer%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
+                    class="h-24 w-full border-none d-block"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
+
+            <article>
+              <h5 class="my-2">Card with Text Overlay</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-center">
+                  <div class="card card-disabled relative mb-2 w-16">
+                    <img
+                      src="./assets/img/shirt.jpg"
+                      alt="JohDoe"
+                      class="card-img"
+                    />
+                    <i
+                      class="fas fa-times card-close absolute top-8 right-8"
+                    ></i>
+                    <div class="card-content">
+                      <p>Free Size Shirt</p>
+                      <p>Price: <span class="text-bold">499</span></p>
+                    </div>
+                    <p class="center-text text-16 text-bold text-black">
+                      Out of Stock
+                    </p>
+                  </div>
+                </div>
+
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-disabled%2520relative%2520mb-2%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimg%252Fshirt.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522JohDoe%2522%250A%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%253Ci%250A%2520%2520%2520%2520class%253D%2522fas%2520fa-times%2520card-close%2520absolute%2520top-8%2520right-8%2522%250A%2520%2520%2520%253E%253C%252Fi%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%253Cp%253EFree%2520Size%2520Shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%253EPrice%253A%2520%253Cspan%253E499%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%2520class%253D%2522center-text%2520text-16%2520text-bold%2520text-black%2522%253E%250A%2520%2520%2520%2520%2520Out%2520of%2520Stock%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                    class="h-24 w-full border-none d-block"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
+
+            <article>
+              <h5 class="my-2">Text only cards</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-evenly items-center mb-2">
+                  <div class="card p-2 w-16">
+                    <h5>Card One</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quasi corporis iure ipsa sint neque accusantium excepturi
+                      deleniti sapiente quos velit adipisci possimus
+                      perspiciatis tenetur quaerat, debitis eveniet ullam aut
+                      molestiae.
+                    </p>
+                  </div>
+                  <div class="card p-2 w-16">
+                    <h5>Card Two</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quasi corporis iure ipsa sint neque accusantium excepturi
+                      deleniti sapiente quos velit adipisci possimus
+                      perspiciatis tenetur quaerat, debitis eveniet ullam aut
+                      molestiae.
+                    </p>
+                  </div>
+                </div>
+
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520p-2%2520w-16%2522%253E%250A%2520%2520%253Ch5%253ECard%2520One%253C%252Fh5%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Quasi%2520corporis%250A%2520%2520%2520%2520iure%2520ipsa%2520sint%2520neque%2520accusantium%2520excepturi%2520deleniti%2520sapiente%2520quos%2520velit%250A%2520%2520%2520%2520adipisci%2520possimus%2520perspiciatis%2520tenetur%2520quaerat%252C%2520debitis%2520eveniet%2520ullam%2520aut%250A%2520%2520%2520%2520molestiae.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                    class="h-20 w-full border-none d-block"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </article>
+
+            <article>
+              <h5 class="my-2">Card with Badge</h5>
+              <div class="border-rounded p-2">
+                <div class="d-flex content-evenly">
+                  <div class="card w-16 relative">
+                    <div
+                      class="badge bg-secondary px-1 py-half text-white absolute top-8 right-8"
+                    >
+                      <p>New</p>
+                    </div>
+                    <img
+                      src="/assets/img/shirt.jpg"
+                      alt="Shirt"
+                      class="card-img"
+                    />
+                    <div class="card-content">
+                      <p>Lorem ipsum dolor, sit amet</p>
+                      <p class="text-12">Shirt</p>
+                      <p>Price: <span class="text-bold">599</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
         </div>
       </div>
+
       <footer class="h-12 bg-secondary d-flex flex-col items-center">
-        <h5 class="mt-2">Made with by Debarshi Bhattacharjee</h5>
+        <h5 class="mt-2 text-black">Made by Debarshi Bhattacharjee</h5>
         <div>
           <a href="/https://github.com/Debarshi95">
-            <i class="fab fa-github text-16"></i>
+            <i class="fab fa-github text-16 text-black"></i>
           </a>
           <a
             href="/https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164"
           >
-            <i class="fab fa-linkedin text-16"></i>
+            <i class="fab fa-linkedin text-16 text-black"></i>
           </a>
           <a href="https://twitter.com/debarshib13">
-            <i class="fab fa-twitter text-16"></i>
+            <i class="fab fa-twitter text-16 text-black"></i>
           </a>
         </div>
       </footer>

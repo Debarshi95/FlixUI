@@ -18,37 +18,37 @@
 h1 {
   font-size: 2.75rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 h2 {
   font-size: 2.5rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 h3 {
   font-size: 2.15rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 h4 {
   font-size: 1.85rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 h5 {
   font-size: 1.45rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 h6 {
   font-size: 1.1rem;
   margin: 0;
-  color: var(--color-black);
+  color: inherit;
 }
 
 .text-10 {
@@ -99,4 +99,21 @@ h6 {
 }
 .text-40 {
   font-size: 4rem;
+}
+
+.center-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+}
+.text-bold {
+  font-weight: bold;
+}
+p,
+span {
+  margin: 0;
+  color: inherit;
 }
