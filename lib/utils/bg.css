@@ -13,3 +13,15 @@
 .bg-black {
   background-color: var(--color-black);
 }
+
+.bg-success {
+  background-color: var(--color-text-success);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
