@@ -4,16 +4,16 @@
   column-gap: 2rem;
 }
 .code-container {
-  background-color: #fafafa;
+  background-color: var(--color-paper);
   /* max-height: 14rem; */
   border: 0;
 }
 
 .border-rounded {
-  border: 0.12rem solid #bdbdbd;
+  border: 0.12rem solid var(--color-gray);
 }
 .border-bottom {
-  border-bottom: 0.12rem solid #bdbdbd;
+  border-bottom: 0.12rem solid var(--color-gray);
 }
 .flex-wrap {
   flex-wrap: wrap;

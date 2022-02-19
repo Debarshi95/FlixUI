@@ -18,7 +18,7 @@ ul {
 }
 li {
   display: block;
-  padding: 0.25rem;
+  padding: 6px;
 }
 a {
   text-decoration: none;
