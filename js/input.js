@@ -3,7 +3,7 @@ const error = document.querySelector("#input-error");
 
 input.addEventListener("keyup", function (e) {
   const { value } = e.target;
-  console.log({ e });
+
   if (value.length > 4) {
     error.classList.remove("d-none");
     error.textContent = "";
