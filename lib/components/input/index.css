@@ -1,0 +1,11 @@
+.input {
+  padding: 1rem 1.4rem;
+  outline: none;
+  background-color: var(--color-paper);
+  border: 2px solid var(--color-gray);
+  min-width: 20rem;
+}
+
+.input-error {
+  border: 2px solid var(--color-red);
+}
