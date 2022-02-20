@@ -30,6 +30,13 @@
 .section-border {
   border: 0;
 }
+.border-rounded-4 {
+  border-radius: 4px;
+}
+
+.pointer {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .btn-toggle {
     display: none;

@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Avatar</title>
+    <title>Snackbar</title>
   </head>
   <body>
     <nav
@@ -35,9 +35,9 @@
         </li>
       </ul>
     </nav>
-    <main class="min-h-screen body-container">
+    <main class="min-h-screen body-container text-black">
       <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
+        class="w-full divider-right sidenav text-center sticky top navbar p-1"
       >
         <div class="d-flex content-between">
           <h5 class="m-none">Components</h5>
@@ -78,32 +78,36 @@
           </li>
         </nav>
       </aside>
-      <section id="avatar" class="mb-2 p-1 flex-1">
+      <section id="alert" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Avatar</h1>
-          <p class="py-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+          <h1>Snackbar</h1>
         </header>
-
         <article>
-          <h5 class="my-2">Round Avatars</h5>
+          <h5 class="my-2">Basic Snackbars</h5>
           <div class="section-border">
-            <div class="d-flex content-center items-center mb-2 flex-wrap">
-              <div class="avatar-round avatar-round-lg mr-2">
-                <img src="../assets/img/user-1.jpg" alt="JohnDoe" />
+            <div class="d-flex flex-wrap content-center items-center">
+              <div
+                id="snackbar-root"
+                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
+              >
+                Primary
+                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
               </div>
-              <div class="avatar-round avatar-round-md mr-2">
-                <img src="../assets/img/user-3.jpg" alt="Jane Dane" />
-              </div>
-              <div class="avatar-round avatar-round-sm">
-                <img src="../assets/img/user-2.jpg" alt="JohnDoe-2" />
+            </div>
+
+            <div class="d-flex flex-wrap content-center items-center mt-1 mb-2">
+              <div
+                id="snackbar-root"
+                class="pointer bg-success text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
+              >
+                Success
+                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
               </div>
             </div>
             <code>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-round%2520avatar-round-lg%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-round%2520avatar-round-md%2522%253E%250A%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-3.jpg%2522%2520alt%253D%2522Jane%2520Dane%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-                class="h-14 w-full border-none d-block"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+                class="h-22 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -112,23 +116,27 @@
         </article>
 
         <article>
-          <h5 class="my-2">Text Avatars</h5>
+          <h5 class="my-2">Auto closing Snackbars</h5>
           <div class="section-border">
-            <div class="d-flex content-center items-center mb-2 flex-wrap">
-              <div class="avatar-square avatar-square-lg mr-2">
-                <p>DB</p>
-              </div>
-              <div class="avatar-square avatar-square-md mr-2">
-                <p>JF</p>
-              </div>
-              <div class="avatar-square avatar-square-sm">
-                <p>EM</p>
+            <div class="d-flex flex-wrap content-center items-center">
+              <div
+                id="snackbar-auto"
+                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
+              >
+                Primary
+                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
               </div>
             </div>
             <code>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-square%2520avatar-square-lg%2522%253E%250A%2520%2520%253Cp%253EDB%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-square%2520avatar-square-md%2522%253E%250A%2520%2520%253Cp%253EJF%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-                class="h-14 w-full border-none d-block"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
+                class="h-22 w-full border-none d-block"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=javascript&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=snackbarAuto.addEventListener%28%2522click%2522%252C%2520function%2520%28%29%2520%257B%250A%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520snackbarAuto.classList.add%28%2522d-none%2522%29%253B%250A%2520%2520%257D%252C%25205000%29%253B%250A%257D%29%253B%250A"
+                class="h-20 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -137,12 +145,12 @@
         </article>
         <div class="d-flex content-between text-8">
           <a
-            href="/docs/alert.html"
+            href="/docs/modal.html"
             class="btn btn-secondary-outlined text-white"
-            >Alert</a
+            >Modal</a
           >
-          <a href="/docs/button.html" class="btn btn-secondary-outlined"
-            >Button</a
+          <a href="/docs/navigation.html" class="btn btn-secondary-outlined"
+            >Navigation</a
           >
         </div>
       </section>
@@ -161,5 +169,6 @@
         </a>
       </div>
     </footer>
+    <script src="/js/snackbar.js"></script>
   </body>
 </html>
