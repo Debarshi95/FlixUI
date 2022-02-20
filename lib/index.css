@@ -10,6 +10,9 @@
 @import "./components/avatar/index.css";
 @import "./components/badge/index.css";
 @import "./components/cards/index.css";
+@import "./components/image/index.css";
+@import "./components/modal/index.css";
+/*@import "./components/grid/index.css"; */
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
@@ -29,10 +32,29 @@
   --color-text-primary: #323232;
   --color-text-secondary: #fff;
 
+  --color-paper: #fafafa;
+  --color-gray: #bdbdbd;
   --size-sm: 32rem;
   --size-md: 48rem;
   --size-lg: 56rem;
   --size-xl: 64rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", "Courier New", Courier, monospace;
+}
+
+body.modal-open {
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .border-none {
@@ -85,7 +107,9 @@
 #sidebar-nav {
   display: none;
 }
-
+.index-999 {
+  z-index: 999;
+}
 .navlink {
   text-decoration: none;
   color: inherit;
@@ -98,6 +122,20 @@
 
 #sidebar-nav a:hover {
   background-color: #bdbdbd;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: block;
+  padding: 0.25rem;
+}
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -106,6 +144,7 @@
     margin-right: 2rem;
     background-color: transparent;
     color: var(--color-black);
+    width: 16rem;
   }
   #sidebar-nav {
     display: block;
