@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Badge</title>
+    <title>Input</title>
   </head>
   <body>
     <nav
@@ -84,44 +84,67 @@
           </li>
         </nav>
       </aside>
-      <section id="badge" class="mb-2 p-1 flex-1">
+      <section id="input" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Badge</h1>
+          <h1>Input</h1>
           <p class="py-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </header>
         <article>
-          <h5 class="my-2">Online-Offline Badges</h5>
+          <h5 class="my-2">Simple Input</h5>
           <div class="section-border">
             <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div class="badge avatar-square avatar-square-md mr-2">
-                <p>AB</p>
-                <i class="badge-online"></i>
-              </div>
-
-              <div class="badge mr-2">
-                <img
-                  src="../assets/img/user-1.jpg"
-                  alt="JohnDoe"
-                  class="avatar-round avatar-round-lg"
+              <div>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="input text-12"
+                  placeholder="Enter some text"
                 />
-                <i class="badge-offline"></i>
               </div>
-
-              <div class="badge mr-2">
-                <img
-                  src="../assets/img/user-3.jpg"
-                  alt="JohnDoe"
-                  class="avatar-round avatar-round-sm"
+              <div>
+                <input
+                  type="email"
+                  name="fullname"
+                  class="input text-12"
+                  placeholder="johndoe@gmail.com"
                 />
-                <i class="badge-online"></i>
               </div>
             </div>
             <code>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2520avatar-square%2520avatar-square-md%2522%253E%250A%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%253Ci%2520class%253D%2522badge-online%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimg%252Fuser-1.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522JohnDoe%2522%250A%2520%2520%2520%2520class%253D%2522avatar-round%2520avatar-round-lg%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522badge-offline%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-                class="h-20 w-full border-none d-block"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%253Cinput%250A%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520name%253D%2522fullname%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520some%2520text%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+                class="h-28 w-full border-none d-block"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </article>
+
+        <article>
+          <h5 class="my-2">Input with Label and Validation</h5>
+          <div class="section-border">
+            <div class="d-flex items-center content-center flex-wrap mb-2">
+              <div>
+                <label for="input-validation" class="d-block text-12"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="input text-12"
+                  placeholder="Enter your email"
+                  id="input-validation"
+                />
+                <p id="input-error" class="text-danger text-center"></p>
+              </div>
+            </div>
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Clabel%2520for%253D%2522input-validation%2522%2520class%253D%2522d-block%2520text-12%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520your%2520email%2522%250A%2520%2520%2520id%253D%2522input-validation%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%253Cp%2520id%253D%2522input-error%2522%2520class%253D%2522text-danger%2520text-center%2522%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                class="h-28 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -130,11 +153,13 @@
         </article>
         <div class="d-flex content-between text-8">
           <a
-            href="/docs/button.html"
+            href="/docs/navigation.html"
             class="btn btn-secondary-outlined text-white"
-            >Button</a
+            >Navigation</a
           >
-          <a href="/docs/card.html" class="btn btn-secondary-outlined">Card</a>
+          <a href="/docs/typography.html" class="btn btn-secondary-outlined"
+            >Typography</a
+          >
         </div>
       </section>
     </main>
@@ -152,6 +177,7 @@
         </a>
       </div>
     </footer>
+    <script src="/js/input.js"></script>
     <script src="/js/docs.js"></script>
   </body>
 </html>

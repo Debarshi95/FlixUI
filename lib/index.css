@@ -12,6 +12,7 @@
 @import "./components/cards/index.css";
 @import "./components/image/index.css";
 @import "./components/modal/index.css";
+@import "./components/input/index.css";
 /*@import "./components/grid/index.css"; */
 :root {
   --color-primary: #5d3fd3;
@@ -31,6 +32,7 @@
   --color-paper: #bdbdbd;
   --color-text-primary: #323232;
   --color-text-secondary: #fff;
+  --color-red: red;
 
   --color-paper: #fafafa;
   --color-gray: #bdbdbd;
