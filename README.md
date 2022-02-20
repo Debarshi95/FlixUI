@@ -18,6 +18,8 @@
 - Image
 - Modal
 - Navigation
+- Typography
+- Input
 - HTML example for each component
 
 ## Run Locally
