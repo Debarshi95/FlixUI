@@ -1,114 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../lib/index.css" />
-    <link rel="stylesheet" href="/css/docs.css" />
-    <title>Modal</title>
-  </head>
-  <body>
-    <nav
-      class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary"
-    >
-      <ul>
-        <li>
-          <a href="/" class="navlink">FlixU</a>
-        </li>
-      </ul>
-      <ul class="d-flex ml-auto">
-        <li>
-          <a href="/docs/alert.html" class="navlink">Documentation</a>
-        </li>
-        <li>
-          <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
-            Github</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main class="min-h-screen body-container">
-      <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
-      >
-        <div class="d-flex content-between">
-          <h5 class="m-none">Components</h5>
-          <span class="btn-toggle">
-            <i
-              class="fas fa-chevron-down d-inline-block pointer"
-              id="btn-toggle"
-            ></i>
-          </span>
-        </div>
-        <nav id="sidebar-nav">
-          <li>
-            <a href="/docs/typography.html" class="navlink">Typography</a>
-          </li>
-          <li>
-            <a href="/docs/alert.html" class="navlink">Alert</a>
-          </li>
-          <li>
-            <a href="/docs/avatar.html" class="navlink">Avatar</a>
-          </li>
-          <li>
-            <a href="/docs/button.html" class="navlink">Button</a>
-          </li>
-          <li>
-            <a href="/docs/badge.html" class="navlink">Badge</a>
-          </li>
-          <li>
-            <a href="/docs/card.html" class="navlink">Card</a>
-          </li>
-          <li>
-            <a href="/docs/image.html" class="navlink">Image</a>
-          </li>
-          <li>
-            <a href="/docs/modal.html" class="navlink">Modal</a>
-          </li>
-          <li>
-            <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
-          </li>
-          <li>
-            <a href="/docs/navigation.html" class="navlink">Navigation</a>
-          </li>
-          <li>
-            <a href="/docs/input.html" class="navlink">Input</a>
-          </li>
-        </nav>
-      </aside>
-      <section id="modal" class="mb-2 p-1 flex-1">
-        <header class="border-bottom">
-          <h1>Modal</h1>
-          <p class="py-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </header>
-        <article>
-          <h5 class="my-2">Simple Modal</h5>
-          <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div
-                class="modal d-flex content-center items-center d-none"
-                id="modal-root"
-              >
-                <div class="bg-paper w-30 p-2">
-                  <h5 class="text-center">This is a Modal</h5>
-                </div>
-              </div>
-              <button class="btn btn-primary" id="btn-modal-controller">
-                Open Modal
-              </button>
-            </div>
 
-            <code>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../lib/index.css" />
+  <link rel="stylesheet" href="/css/docs.css" />
+  <title>Modal</title>
+</head>
+
+<body>
+  <nav class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary">
+    <ul>
+      <li>
+        <a href="/" class="navlink">FlixU</a>
+      </li>
+    </ul>
+    <ul class="d-flex ml-auto">
+      <li>
+        <a href="/docs/alert.html" class="navlink">Documentation</a>
+      </li>
+      <li>
+        <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
+          Github</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="min-h-screen body-container">
+    <aside class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1">
+      <div class="d-flex content-between">
+        <h5 class="m-none">Components</h5>
+        <span class="btn-toggle">
+          <i class="fas fa-chevron-down d-inline-block pointer" id="btn-toggle"></i>
+        </span>
+      </div>
+      <nav id="sidebar-nav">
+        <li>
+          <a href="/docs/typography.html" class="navlink">Typography</a>
+        </li>
+        <li>
+          <a href="/docs/alert.html" class="navlink">Alert</a>
+        </li>
+        <li>
+          <a href="/docs/avatar.html" class="navlink">Avatar</a>
+        </li>
+        <li>
+          <a href="/docs/button.html" class="navlink">Button</a>
+        </li>
+        <li>
+          <a href="/docs/badge.html" class="navlink">Badge</a>
+        </li>
+        <li>
+          <a href="/docs/card.html" class="navlink">Card</a>
+        </li>
+        <li>
+          <a href="/docs/image.html" class="navlink">Image</a>
+        </li>
+        <li>
+          <a href="/docs/modal.html" class="navlink">Modal</a>
+        </li>
+        <li>
+          <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
+        </li>
+        <li>
+          <a href="/docs/navigation.html" class="navlink">Navigation</a>
+        </li>
+        <li>
+          <a href="/docs/input.html" class="navlink">Input</a>
+        </li>
+        <li>
+          <a href="/docs/display.html" class="navlink">Display</a>
+        </li>
+      </nav>
+    </aside>
+    <section id="modal" class="mb-2 p-1 flex-1">
+      <header class="border-bottom">
+        <h1>Modal</h1>
+        <p class="py-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </header>
+      <article>
+        <h5 class="my-2">Simple Modal</h5>
+        <div class="section-border">
+          <div class="d-flex items-center content-center flex-wrap mb-2">
+            <div class="modal d-flex content-center items-center d-none" id="modal-root">
+              <div class="bg-paper w-30 p-2">
+                <h5 class="text-center">This is a Modal</h5>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btn-modal-controller">
+              Open Modal
+            </button>
+          </div>
+
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522border-rounded%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520content-center%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522modal%2520d-flex%2520content-center%2520items-center%2520d-none%2522%250A%2520%2520%2520%2520%2520%2520%2520id%253D%2522modal-root%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-paper%2520w-30%2520p-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522text-center%2522%253EThis%2520is%2520a%2520Modal%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520id%253D%2522open-modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Open%2520Modal%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
                 class="h-28 w-full border-none d-block"
@@ -116,7 +106,7 @@
               >
               </iframe>
             </code>
-            <code class="my-2">
+          <code class="my-2">
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=javascript&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=btnOpenModal.addEventListener%28%2522click%2522%252C%2520function%2520%28%29%2520%257B%250A%2520%2520const%2520%257B%2520body%2520%257D%2520%253D%2520document%253B%250A%2520%2520if%2520%28modal.classList.contains%28%2522d-none%2522%29%29%2520%257B%250A%2520%2520%2520%2520body.classList.add%28%2522modal-open%2522%29%253B%250A%2520%2520%2520%2520modal.classList.remove%28%2522d-none%2522%29%253B%250A%2520%2520%257D%250A%257D%29%253B"
                 class="h-24 w-full border-none d-block"
@@ -124,35 +114,30 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
-        <div class="d-flex content-between text-8">
-          <a
-            href="/docs/button.html"
-            class="btn btn-secondary-outlined text-white"
-            >Card</a
-          >
-          <a href="/docs/snackbar.html" class="btn btn-secondary-outlined"
-            >Snackbar</a
-          >
         </div>
-      </section>
-    </main>
-    <footer class="h-12 bg-secondary d-flex flex-col items-center">
-      <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
-      <div class="py-1">
-        <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
-          <i class="fab fa-linkedin text-16 text-black"></i>
-        </a>
-        <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
-        </a>
+      </article>
+      <div class="d-flex content-between text-8">
+        <a href="/docs/button.html" class="btn btn-secondary-outlined text-white">Card</a>
+        <a href="/docs/snackbar.html" class="btn btn-secondary-outlined">Snackbar</a>
       </div>
-    </footer>
-    <script src="/js/modal.js"></script>
-    <script src="/js/docs.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="h-12 bg-secondary d-flex flex-col items-center">
+    <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
+    <div class="py-1">
+      <a href="https://github.com/Debarshi95">
+        <i class="fab fa-github text-16 text-black"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
+        <i class="fab fa-linkedin text-16 text-black"></i>
+      </a>
+      <a href="https://twitter.com/debarshib13">
+        <i class="fab fa-twitter text-16 text-black"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="/js/modal.js"></script>
+  <script src="/js/docs.js"></script>
+</body>
+
 </html>

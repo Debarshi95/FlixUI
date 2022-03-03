@@ -1,116 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../lib/index.css" />
-    <link rel="stylesheet" href="/css/docs.css" />
-    <title>Navigation</title>
-  </head>
-  <body>
-    <nav
-      class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary"
-    >
-      <ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../lib/index.css" />
+  <link rel="stylesheet" href="/css/docs.css" />
+  <title>Navigation</title>
+</head>
+
+<body>
+  <nav class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary">
+    <ul>
+      <li>
+        <a href="/" class="navlink">FlixU</a>
+      </li>
+    </ul>
+    <ul class="d-flex ml-auto">
+      <li>
+        <a href="/docs/alert.html" class="navlink">Documentation</a>
+      </li>
+      <li>
+        <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
+          Github</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="min-h-screen body-container text-black">
+    <aside class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1">
+      <div class="d-flex content-between">
+        <h5 class="m-none">Components</h5>
+        <span class="btn-toggle">
+          <i class="fas fa-chevron-down d-inline-block pointer" id="btn-toggle"></i>
+        </span>
+      </div>
+      <nav id="sidebar-nav">
         <li>
-          <a href="/" class="navlink">FlixU</a>
-        </li>
-      </ul>
-      <ul class="d-flex ml-auto">
-        <li>
-          <a href="/docs/alert.html" class="navlink">Documentation</a>
+          <a href="/docs/typography.html" class="navlink">Typography</a>
         </li>
         <li>
-          <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
-            Github</a
-          >
+          <a href="/docs/alert.html" class="navlink">Alert</a>
         </li>
-      </ul>
-    </nav>
-    <main class="min-h-screen body-container text-black">
-      <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
-      >
-        <div class="d-flex content-between">
-          <h5 class="m-none">Components</h5>
-          <span class="btn-toggle">
-            <i
-              class="fas fa-chevron-down d-inline-block pointer"
-              id="btn-toggle"
-            ></i>
-          </span>
-        </div>
-        <nav id="sidebar-nav">
-          <li>
-            <a href="/docs/typography.html" class="navlink">Typography</a>
-          </li>
-          <li>
-            <a href="/docs/alert.html" class="navlink">Alert</a>
-          </li>
-          <li>
-            <a href="/docs/avatar.html" class="navlink">Avatar</a>
-          </li>
-          <li>
-            <a href="/docs/button.html" class="navlink">Button</a>
-          </li>
-          <li>
-            <a href="/docs/badge.html" class="navlink">Badge</a>
-          </li>
-          <li>
-            <a href="/docs/card.html" class="navlink">Card</a>
-          </li>
-          <li>
-            <a href="/docs/image.html" class="navlink">Image</a>
-          </li>
-          <li>
-            <a href="/docs/modal.html" class="navlink">Modal</a>
-          </li>
-          <li>
-            <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
-          </li>
-          <li>
-            <a href="/docs/navigation.html" class="navlink">Navigation</a>
-          </li>
-          <li>
-            <a href="/docs/input.html" class="navlink">Input</a>
-          </li>
-        </nav>
-      </aside>
-      <section id="navigation" class="mb-2 p-1 flex-1">
-        <header class="border-bottom">
-          <h1>Navigation</h1>
-          <p class="py-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </header>
-        <article>
-          <h5 class="my-2">Simple Navigation</h5>
-          <div class="section-border">
-            <nav class="d-flex items-center mb-2">
-              <a href="/" class="text-12 text-bold">Home</a>
-              <ul class="d-flex ml-auto">
-                <li>
-                  <a href="#link1" class="d-inline-block p-1">Link one</a>
-                </li>
-                <li class="text-white">
-                  <a href="#link2" class="bg-primary d-inline-block p-1"
-                    >Link two</a
-                  >
-                </li>
-                <li>
-                  <a href="#link3" class="d-inline-block p-1">Link three</a>
-                </li>
-              </ul>
-            </nav>
-            <code>
+        <li>
+          <a href="/docs/avatar.html" class="navlink">Avatar</a>
+        </li>
+        <li>
+          <a href="/docs/button.html" class="navlink">Button</a>
+        </li>
+        <li>
+          <a href="/docs/badge.html" class="navlink">Badge</a>
+        </li>
+        <li>
+          <a href="/docs/card.html" class="navlink">Card</a>
+        </li>
+        <li>
+          <a href="/docs/image.html" class="navlink">Image</a>
+        </li>
+        <li>
+          <a href="/docs/modal.html" class="navlink">Modal</a>
+        </li>
+        <li>
+          <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
+        </li>
+        <li>
+          <a href="/docs/navigation.html" class="navlink">Navigation</a>
+        </li>
+        <li>
+          <a href="/docs/input.html" class="navlink">Input</a>
+        </li>
+        <li>
+          <a href="/docs/display.html" class="navlink">Display</a>
+        </li>
+      </nav>
+    </aside>
+    <section id="navigation" class="mb-2 p-1 flex-1">
+      <header class="border-bottom">
+        <h1>Navigation</h1>
+        <p class="py-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </header>
+      <article>
+        <h5 class="my-2">Simple Navigation</h5>
+        <div class="section-border">
+          <nav class="d-flex items-center mb-2">
+            <a href="/" class="text-12 text-bold">Home</a>
+            <ul class="d-flex ml-auto">
+              <li>
+                <a href="#link1" class="d-inline-block p-1">Link one</a>
+              </li>
+              <li class="text-white">
+                <a href="#link2" class="bg-primary d-inline-block p-1">Link two</a>
+              </li>
+              <li>
+                <a href="#link3" class="d-inline-block p-1">Link three</a>
+              </li>
+            </ul>
+          </nav>
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cnav%2520class%253D%2522d-flex%2520items-center%2522%253E%250A%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522text-12%2520text-bold%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%253Cul%2520class%253D%2522d-flex%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523link1%2522%2520class%253D%2522d-inline-block%2520p-1%2522%253ELink%2520one%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text-white%2522%253E%253Ca%2520href%253D%2522%2523link2%2522%2520class%253D%2522bg-primary%2520d-inline-block%2520p-1%2522%253ELink%2520two%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523link3%2522%2520class%253D%2522d-inline-block%2520p-1%2522%253ELink%2520three%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
                 class="h-24 w-full border-none d-block"
@@ -118,32 +109,29 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
-        <div class="d-flex content-between text-8">
-          <a
-            href="/docs/snackbar.html"
-            class="btn btn-secondary-outlined text-white"
-            >Snackbar</a
-          >
-          <a href="/docs/alert.html" class="btn btn-secondary-outlined">Home</a>
         </div>
-      </section>
-    </main>
-    <footer class="h-12 bg-secondary d-flex flex-col items-center">
-      <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
-      <div class="py-1">
-        <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
-          <i class="fab fa-linkedin text-16 text-black"></i>
-        </a>
-        <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
-        </a>
+      </article>
+      <div class="d-flex content-between text-8">
+        <a href="/docs/snackbar.html" class="btn btn-secondary-outlined text-white">Snackbar</a>
+        <a href="/docs/alert.html" class="btn btn-secondary-outlined">Home</a>
       </div>
-    </footer>
-    <script src="/js/docs.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="h-12 bg-secondary d-flex flex-col items-center">
+    <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
+    <div class="py-1">
+      <a href="https://github.com/Debarshi95">
+        <i class="fab fa-github text-16 text-black"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
+        <i class="fab fa-linkedin text-16 text-black"></i>
+      </a>
+      <a href="https://twitter.com/debarshib13">
+        <i class="fab fa-twitter text-16 text-black"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="/js/docs.js"></script>
+</body>
+
 </html>

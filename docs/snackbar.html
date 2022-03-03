@@ -1,116 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../lib/index.css" />
-    <link rel="stylesheet" href="/css/docs.css" />
-    <title>Snackbar</title>
-  </head>
-  <body>
-    <nav
-      class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary"
-    >
-      <ul>
-        <li>
-          <a href="/" class="navlink">FlixU</a>
-        </li>
-      </ul>
-      <ul class="d-flex ml-auto">
-        <li>
-          <a href="/docs/alert.html" class="navlink">Documentation</a>
-        </li>
-        <li>
-          <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
-            Github</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main class="min-h-screen body-container text-black">
-      <aside
-        class="w-full divider-right sidenav text-center sticky top navbar p-1"
-      >
-        <div class="d-flex content-between">
-          <h5 class="m-none">Components</h5>
-          <span class="btn-toggle">
-            <i
-              class="fas fa-chevron-down d-inline-block pointer"
-              id="btn-toggle"
-            ></i>
-          </span>
-        </div>
-        <nav id="sidebar-nav">
-          <li>
-            <a href="/docs/typography.html" class="navlink">Typography</a>
-          </li>
-          <li>
-            <a href="/docs/alert.html" class="navlink">Alert</a>
-          </li>
-          <li>
-            <a href="/docs/avatar.html" class="navlink">Avatar</a>
-          </li>
-          <li>
-            <a href="/docs/button.html" class="navlink">Button</a>
-          </li>
-          <li>
-            <a href="/docs/badge.html" class="navlink">Badge</a>
-          </li>
-          <li>
-            <a href="/docs/card.html" class="navlink">Card</a>
-          </li>
-          <li>
-            <a href="/docs/image.html" class="navlink">Image</a>
-          </li>
-          <li>
-            <a href="/docs/modal.html" class="navlink">Modal</a>
-          </li>
-          <li>
-            <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
-          </li>
-          <li>
-            <a href="/docs/navigation.html" class="navlink">Navigation</a>
-          </li>
-          <li>
-            <a href="/docs/input.html" class="navlink">Input</a>
-          </li>
-        </nav>
-      </aside>
-      <section id="alert" class="mb-2 p-1 flex-1">
-        <header class="border-bottom">
-          <h1>Snackbar</h1>
-        </header>
-        <article>
-          <h5 class="my-2">Basic Snackbars</h5>
-          <div class="section-border">
-            <div class="d-flex flex-wrap content-center items-center">
-              <div
-                id="snackbar-root"
-                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Primary
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
-              </div>
-            </div>
 
-            <div class="d-flex flex-wrap content-center items-center mt-1 mb-2">
-              <div
-                id="snackbar-root"
-                class="pointer bg-success text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Success
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../lib/index.css" />
+  <link rel="stylesheet" href="/css/docs.css" />
+  <title>Snackbar</title>
+</head>
+
+<body>
+  <nav class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary">
+    <ul>
+      <li>
+        <a href="/" class="navlink">FlixU</a>
+      </li>
+    </ul>
+    <ul class="d-flex ml-auto">
+      <li>
+        <a href="/docs/alert.html" class="navlink">Documentation</a>
+      </li>
+      <li>
+        <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
+          Github</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="min-h-screen body-container text-black">
+    <aside class="w-full divider-right sidenav text-center sticky top navbar p-1">
+      <div class="d-flex content-between">
+        <h5 class="m-none">Components</h5>
+        <span class="btn-toggle">
+          <i class="fas fa-chevron-down d-inline-block pointer" id="btn-toggle"></i>
+        </span>
+      </div>
+      <nav id="sidebar-nav">
+        <li>
+          <a href="/docs/typography.html" class="navlink">Typography</a>
+        </li>
+        <li>
+          <a href="/docs/alert.html" class="navlink">Alert</a>
+        </li>
+        <li>
+          <a href="/docs/avatar.html" class="navlink">Avatar</a>
+        </li>
+        <li>
+          <a href="/docs/button.html" class="navlink">Button</a>
+        </li>
+        <li>
+          <a href="/docs/badge.html" class="navlink">Badge</a>
+        </li>
+        <li>
+          <a href="/docs/card.html" class="navlink">Card</a>
+        </li>
+        <li>
+          <a href="/docs/image.html" class="navlink">Image</a>
+        </li>
+        <li>
+          <a href="/docs/modal.html" class="navlink">Modal</a>
+        </li>
+        <li>
+          <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
+        </li>
+        <li>
+          <a href="/docs/navigation.html" class="navlink">Navigation</a>
+        </li>
+        <li>
+          <a href="/docs/input.html" class="navlink">Input</a>
+        </li>
+        <li>
+          <a href="/docs/display.html" class="navlink">Display</a>
+        </li>
+      </nav>
+    </aside>
+    <section id="alert" class="mb-2 p-1 flex-1">
+      <header class="border-bottom">
+        <h1>Snackbar</h1>
+      </header>
+      <article>
+        <h5 class="my-2">Basic Snackbars</h5>
+        <div class="section-border">
+          <div class="d-flex flex-wrap content-center items-center">
+            <div id="snackbar-root"
+              class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4">
+              Primary
+              <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
             </div>
-            <code>
+          </div>
+
+          <div class="d-flex flex-wrap content-center items-center mt-1 mb-2">
+            <div id="snackbar-root"
+              class="pointer bg-success text-white w-20 p-1 d-flex content-between items-center border-rounded-4">
+              Success
+              <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
+            </div>
+          </div>
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
                 class="h-22 w-full border-none d-block"
@@ -118,22 +107,20 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article>
-          <h5 class="my-2">Auto closing Snackbars</h5>
-          <div class="section-border">
-            <div class="d-flex flex-wrap content-center items-center">
-              <div
-                id="snackbar-auto"
-                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Primary
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
-              </div>
+      <article>
+        <h5 class="my-2">Auto closing Snackbars</h5>
+        <div class="section-border">
+          <div class="d-flex flex-wrap content-center items-center">
+            <div id="snackbar-auto"
+              class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4">
+              Primary
+              <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
             </div>
-            <code>
+          </div>
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
                 class="h-22 w-full border-none d-block"
@@ -147,35 +134,30 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
-        <div class="d-flex content-between text-8">
-          <a
-            href="/docs/modal.html"
-            class="btn btn-secondary-outlined text-white"
-            >Modal</a
-          >
-          <a href="/docs/navigation.html" class="btn btn-secondary-outlined"
-            >Navigation</a
-          >
         </div>
-      </section>
-    </main>
-    <footer class="h-12 bg-secondary d-flex flex-col items-center">
-      <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
-      <div class="py-1">
-        <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
-          <i class="fab fa-linkedin text-16 text-black"></i>
-        </a>
-        <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
-        </a>
+      </article>
+      <div class="d-flex content-between text-8">
+        <a href="/docs/modal.html" class="btn btn-secondary-outlined text-white">Modal</a>
+        <a href="/docs/navigation.html" class="btn btn-secondary-outlined">Navigation</a>
       </div>
-    </footer>
-    <script src="/js/snackbar.js"></script>
-    <script src="/js/docs.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="h-12 bg-secondary d-flex flex-col items-center">
+    <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
+    <div class="py-1">
+      <a href="https://github.com/Debarshi95">
+        <i class="fab fa-github text-16 text-black"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
+        <i class="fab fa-linkedin text-16 text-black"></i>
+      </a>
+      <a href="https://twitter.com/debarshib13">
+        <i class="fab fa-twitter text-16 text-black"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="/js/snackbar.js"></script>
+  <script src="/js/docs.js"></script>
+</body>
+
 </html>
