@@ -20,7 +20,8 @@
   --color-disabled: #beb2ed;
   --color-black: #3e4152;
   --color-white: #fff;
-
+  --color-gray:#bdbdbd;
+  --color-yellow:#FFDF00;
   --color-success: #84f1c9;
   --color-warning: #ffe7c5;
   --color-danger: #fcc5c5;
@@ -142,6 +143,11 @@ li {
 }
 a {
   text-decoration: none;
+}
+
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {

@@ -1,22 +1,38 @@
-.text-primary {
-  color: var(--color-primary);
+.text-primary{
+  color:var(--color-primary)
 }
-.text-secondary {
-  color: var(--color-secondary);
+.text-secondary{
+  color:var(--color-secondary)
+}
+.text-warning{
+  color:var(--color-warning)  
 }
 
-.text-white {
-  color: var(--color-white);
+.text-danger{
+  color:var(--color-danger)
 }
-.text-black {
-  color: var(--color-black);
+
+.text-success{
+  color:var(--color-success)
 }
+.text-black{
+  color:var(--color-success)  
+}
+
+.text-white{
+  color:var(--color-white)
+}
+
+.text-gray{
+  color:var(--color-gray)
+}
+.text-yellow{
+  color: var(--color-yellow);
+}
+
+
 .text-center {
   text-align: center;
-}
-
-.text-danger {
-  color: var(--color-danger);
 }
 
 h1 {
