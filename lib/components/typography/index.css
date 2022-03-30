@@ -1,30 +1,30 @@
 .text-primary{
-  color:var(--color-primary)
+  color:var(--color-primary);
 }
 .text-secondary{
-  color:var(--color-secondary)
+  color:var(--color-secondary);
 }
 .text-warning{
-  color:var(--color-warning)  
+  color:var(--color-warning);
 }
 
 .text-danger{
-  color:var(--color-danger)
+  color:var(--color-danger);
 }
 
 .text-success{
-  color:var(--color-success)
+  color:var(--color-success);
 }
 .text-black{
-  color:var(--color-success)  
+  color:var(--color-black);  
 }
 
 .text-white{
-  color:var(--color-white)
+  color:var(--color-white);
 }
 
 .text-gray{
-  color:var(--color-gray)
+  color:var(--color-gray);
 }
 .text-yellow{
   color: var(--color-yellow);
