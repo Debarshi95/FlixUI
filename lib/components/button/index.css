@@ -14,6 +14,13 @@
   color: var(--color-text-secondary);
 }
 
+.icon-btn.icon-btn-simple {
+  background-color: transparent;
+  outline: none;
+  border: 1.5px solid var(--color-gray);
+  border-radius: 50%;
+  box-sizing: content-box;
+}
 .btn {
   outline: none;
   cursor: pointer;
