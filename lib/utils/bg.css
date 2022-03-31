@@ -4,3 +4,24 @@
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-paper {
+  background-color: var(--color-paper);
+}
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-success {
+  background-color: var(--color-text-success);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}

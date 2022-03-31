@@ -11,29 +11,145 @@
 .text-black {
   color: var(--color-black);
 }
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
 h1 {
   font-size: 2.75rem;
   margin: 0;
+  color: inherit;
 }
 
 h2 {
   font-size: 2.5rem;
   margin: 0;
+  color: inherit;
 }
 
 h3 {
   font-size: 2.15rem;
   margin: 0;
+  color: inherit;
 }
 
 h4 {
   font-size: 1.85rem;
+  margin: 0;
+  color: inherit;
 }
 
 h5 {
   font-size: 1.45rem;
+  margin: 0;
+  color: inherit;
 }
 
 h6 {
   font-size: 1.1rem;
+  margin: 0;
+  color: inherit;
+}
+
+.text-6 {
+  font-size: 0.6rem;
+}
+
+.text-8 {
+  font-size: 0.8rem;
+}
+.text-10 {
+  font-size: 1rem;
+}
+
+.text-12 {
+  font-size: 1.2rem;
+}
+.text-14 {
+  font-size: 1.4rem;
+}
+.text-16 {
+  font-size: 1.6rem;
+}
+.text-18 {
+  font-size: 1.8rem;
+}
+.text-20 {
+  font-size: 2rem;
+}
+.text-22 {
+  font-size: 2.2rem;
+}
+.text-24 {
+  font-size: 2.4rem;
+}
+.text-26 {
+  font-size: 2.6rem;
+}
+.text-28 {
+  font-size: 2.8rem;
+}
+.text-30 {
+  font-size: 3rem;
+}
+.text-32 {
+  font-size: 3.2rem;
+}
+.text-34 {
+  font-size: 3.4rem;
+}
+.text-36 {
+  font-size: 3.6rem;
+}
+.text-38 {
+  font-size: 3.8rem;
+}
+.text-40 {
+  font-size: 4rem;
+}
+
+.center-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+}
+.text-bold {
+  font-weight: bold;
+}
+p,
+span {
+  margin: 0;
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.15rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.35rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p,
+  span {
+    font-size: 0.95rem;
+  }
 }
