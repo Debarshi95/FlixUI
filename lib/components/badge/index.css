@@ -22,3 +22,26 @@
   bottom: 18%;
   right: 0%;
 }
+.badge-icon {
+  background: transparent;
+  border: 1.5px solid var(--color-gray);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-count {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
