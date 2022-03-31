@@ -22,3 +22,13 @@
   bottom: 18%;
   right: 0%;
 }
+.badge-icon {
+  background: transparent;
+  border: 1.5px solid var(--color-gray);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
