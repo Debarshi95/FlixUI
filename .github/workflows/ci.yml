@@ -2,7 +2,7 @@ name: Deploy draft on PR
 
 on:
   pull_request:
-    branches: [develop]
+    branches: [develop, temp-develop]
   push:
     branches: [develop, master]
 
@@ -22,6 +22,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: '.'
+          build-dir: "."
           draft: true
           comment-on-commit: true
