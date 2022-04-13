@@ -1,118 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../lib/index.css" />
-    <link rel="stylesheet" href="/css/docs.css" />
-    <title>Input</title>
-  </head>
-  <body>
-    <nav
-      class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary"
-    >
-      <ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../lib/index.css" />
+  <link rel="stylesheet" href="/css/docs.css" />
+  <title>Input</title>
+</head>
+
+<body>
+  <nav class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary">
+    <ul>
+      <li>
+        <a href="/" class="navlink">FlixU</a>
+      </li>
+    </ul>
+    <ul class="d-flex ml-auto">
+      <li>
+        <a href="/docs/alert.html" class="navlink">Documentation</a>
+      </li>
+      <li>
+        <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
+          Github</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="min-h-screen body-container">
+    <aside class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1">
+      <div class="d-flex content-between">
+        <h5 class="m-none">Components</h5>
+        <span class="btn-toggle">
+          <i class="fas fa-chevron-down d-inline-block pointer" id="btn-toggle"></i>
+        </span>
+      </div>
+      <nav id="sidebar-nav">
         <li>
-          <a href="/" class="navlink">FlixU</a>
-        </li>
-      </ul>
-      <ul class="d-flex ml-auto">
-        <li>
-          <a href="/docs/alert.html" class="navlink">Documentation</a>
+          <a href="/docs/typography.html" class="navlink">Typography</a>
         </li>
         <li>
-          <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
-            Github</a
-          >
+          <a href="/docs/alert.html" class="navlink">Alert</a>
         </li>
-      </ul>
-    </nav>
-    <main class="min-h-screen body-container">
-      <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
-      >
-        <div class="d-flex content-between">
-          <h5 class="m-none">Components</h5>
-          <span class="btn-toggle">
-            <i
-              class="fas fa-chevron-down d-inline-block pointer"
-              id="btn-toggle"
-            ></i>
-          </span>
-        </div>
-        <nav id="sidebar-nav">
-          <li>
-            <a href="/docs/typography.html" class="navlink">Typography</a>
-          </li>
-          <li>
-            <a href="/docs/alert.html" class="navlink">Alert</a>
-          </li>
-          <li>
-            <a href="/docs/avatar.html" class="navlink">Avatar</a>
-          </li>
-          <li>
-            <a href="/docs/button.html" class="navlink">Button</a>
-          </li>
-          <li>
-            <a href="/docs/badge.html" class="navlink">Badge</a>
-          </li>
-          <li>
-            <a href="/docs/card.html" class="navlink">Card</a>
-          </li>
-          <li>
-            <a href="/docs/image.html" class="navlink">Image</a>
-          </li>
-          <li>
-            <a href="/docs/modal.html" class="navlink">Modal</a>
-          </li>
-          <li>
-            <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
-          </li>
-          <li>
-            <a href="/docs/navigation.html" class="navlink">Navigation</a>
-          </li>
-          <li>
-            <a href="/docs/input.html" class="navlink">Input</a>
-          </li>
-        </nav>
-      </aside>
-      <section id="input" class="mb-2 p-1 flex-1">
-        <header class="border-bottom">
-          <h1>Input</h1>
-          <p class="py-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </header>
-        <article>
-          <h5 class="my-2">Simple Input</h5>
-          <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div>
-                <input
-                  type="text"
-                  name="fullname"
-                  class="input text-12"
-                  placeholder="Enter some text"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="fullname"
-                  class="input text-12"
-                  placeholder="johndoe@gmail.com"
-                />
-              </div>
+        <li>
+          <a href="/docs/avatar.html" class="navlink">Avatar</a>
+        </li>
+        <li>
+          <a href="/docs/button.html" class="navlink">Button</a>
+        </li>
+        <li>
+          <a href="/docs/badge.html" class="navlink">Badge</a>
+        </li>
+        <li>
+          <a href="/docs/card.html" class="navlink">Card</a>
+        </li>
+        <li>
+          <a href="/docs/image.html" class="navlink">Image</a>
+        </li>
+        <li>
+          <a href="/docs/modal.html" class="navlink">Modal</a>
+        </li>
+        <li>
+          <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
+        </li>
+        <li>
+          <a href="/docs/navigation.html" class="navlink">Navigation</a>
+        </li>
+        <li>
+          <a href="/docs/input.html" class="navlink">Input</a>
+        </li>
+        <li>
+          <a href="/docs/display.html" class="navlink">Display</a>
+        </li>
+        <li>
+          <a href="/docs/ratings.html" class="navlink">Ratings</a>
+        </li>
+      </nav>
+    </aside>
+    <section id="input" class="mb-2 p-1 flex-1">
+      <header class="border-bottom">
+        <h1>Input</h1>
+        <p class="py-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </header>
+      <article>
+        <h5 class="my-2">Simple Input</h5>
+        <div class="section-border">
+          <div class="d-flex items-center content-center flex-wrap mb-2">
+            <div>
+              <input type="text" name="fullname" class="input text-12" placeholder="Enter some text" />
             </div>
-            <code>
+            <div>
+              <input type="email" name="fullname" class="input text-12" placeholder="johndoe@gmail.com" />
+            </div>
+          </div>
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%253Cinput%250A%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520name%253D%2522fullname%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520some%2520text%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
                 class="h-28 w-full border-none d-block"
@@ -120,28 +106,21 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article>
-          <h5 class="my-2">Input with Label and Validation</h5>
-          <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div>
-                <label for="input-validation" class="d-block text-12"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  class="input text-12"
-                  placeholder="Enter your email"
-                  id="input-validation"
-                />
-                <p id="input-error" class="text-danger text-center"></p>
-              </div>
+      <article>
+        <h5 class="my-2">Input with Label and Validation</h5>
+        <div class="section-border">
+          <div class="d-flex items-center content-center flex-wrap mb-2">
+            <div>
+              <label for="input-validation" class="d-block text-12">Email</label>
+              <input type="email" name="email" class="input text-12" placeholder="Enter your email"
+                id="input-validation" />
+              <p id="input-error" class="text-danger text-center"></p>
             </div>
-            <code>
+          </div>
+          <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Clabel%2520for%253D%2522input-validation%2522%2520class%253D%2522d-block%2520text-12%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520your%2520email%2522%250A%2520%2520%2520id%253D%2522input-validation%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%253Cp%2520id%253D%2522input-error%2522%2520class%253D%2522text-danger%2520text-center%2522%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E"
                 class="h-28 w-full border-none d-block"
@@ -149,35 +128,30 @@
               >
               </iframe>
             </code>
-          </div>
-        </article>
-        <div class="d-flex content-between text-8">
-          <a
-            href="/docs/navigation.html"
-            class="btn btn-secondary-outlined text-white"
-            >Navigation</a
-          >
-          <a href="/docs/typography.html" class="btn btn-secondary-outlined"
-            >Typography</a
-          >
         </div>
-      </section>
-    </main>
-    <footer class="h-12 bg-secondary d-flex flex-col items-center">
-      <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
-      <div class="py-1">
-        <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
-          <i class="fab fa-linkedin text-16 text-black"></i>
-        </a>
-        <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
-        </a>
+      </article>
+      <div class="d-flex content-between text-8">
+        <a href="/docs/navigation.html" class="btn btn-secondary-outlined text-white">Navigation</a>
+        <a href="/docs/typography.html" class="btn btn-secondary-outlined">Typography</a>
       </div>
-    </footer>
-    <script src="/js/input.js"></script>
-    <script src="/js/docs.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="h-12 bg-secondary d-flex flex-col items-center">
+    <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
+    <div class="py-1">
+      <a href="https://github.com/Debarshi95">
+        <i class="fab fa-github text-16 text-black"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
+        <i class="fab fa-linkedin text-16 text-black"></i>
+      </a>
+      <a href="https://twitter.com/debarshib13">
+        <i class="fab fa-twitter text-16 text-black"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="/js/input.js"></script>
+  <script src="/js/docs.js"></script>
+</body>
+
 </html>
