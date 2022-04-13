@@ -13,6 +13,6 @@ btnToggle.addEventListener("click", function () {
   //   this.style.transform = 'rotate(180deg)';
 });
 
-btnAlert.addEventListener("click", function (e) {
+btnAlert?.addEventListener("click", function (e) {
   e.currentTarget.parentNode.style.display = "none";
 });
