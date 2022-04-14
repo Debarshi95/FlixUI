@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Input</title>
+    <title>List</title>
   </head>
 
   <body>
@@ -38,7 +38,7 @@
     </nav>
     <main class="min-h-screen body-container">
       <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
+        class="w-full divider-right sidenav text-center sticky top navbar p-1"
       >
         <div class="d-flex content-between">
           <h5 class="m-none">Components</h5>
@@ -94,39 +94,34 @@
           </li>
         </nav>
       </aside>
-      <section id="input" class="mb-2 p-1 flex-1">
+      <section id="list" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Input</h1>
+          <h1>List</h1>
           <p class="py-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </header>
+
         <article>
-          <h5 class="my-2">Simple Input</h5>
+          <h5 class="my-2">Stacked List</h5>
           <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div>
-                <input
-                  type="text"
-                  name="fullname"
-                  class="input text-12"
-                  placeholder="Enter some text"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="fullname"
-                  class="input text-12"
-                  placeholder="johndoe@gmail.com"
-                />
-              </div>
-            </div>
-            <code>
+            <ul class="text-center mb-2">
+              <li class="bg-success p-2 text-12 my-1">
+                Success! Profile updated successfully
+              </li>
+              <li class="bg-danger p-2 text-12 my-1">
+                Oops! Couldn't update Profile
+              </li>
+              <li class="bg-warning p-2 text-12 my-1">
+                Are you sure want to update your account?
+              </li>
+            </ul>
+            <code class="iframe-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%253Cinput%250A%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520name%253D%2522fullname%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520some%2520text%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
-                class="h-28 w-full border-none d-block"
+                width="500px"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=true&pv=71px&ph=98px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522text-center%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522bg-primary%2520p-1%2522%253EList%2520Item%25201%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522bg-secondary%2520p-1%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522bg-success%2520p-1%2522%253EList%2520Item%25203%253C%252Fli%253E%250A%253C%252Ful%253E"
                 sandbox="allow-scripts allow-same-origin"
+                class="h-28 w-full border-none d-block"
               >
               </iframe>
             </code>
@@ -134,41 +129,43 @@
         </article>
 
         <article>
-          <h5 class="my-2">Input with Label and Validation</h5>
+          <h5 class="my-2">Simple List</h5>
           <div class="section-border">
-            <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div>
-                <label for="input-validation" class="d-block text-12"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  class="input text-12"
-                  placeholder="Enter your email"
-                  id="input-validation"
-                />
-                <p id="input-error" class="text-danger text-center"></p>
-              </div>
+            <div class="my-2">
+              <ul class="d-flex flex-col items-center">
+                <li class="d-flex items-center">
+                  <span class="fas fa-circle d-block"></span>
+                  <p class="text-12 ml-1">Item 1</p>
+                </li>
+                <li class="d-flex items-center">
+                  <span class="fas fa-circle d-block"></span>
+                  <p class="text-12 ml-1">Item 2</p>
+                </li>
+                <li class="d-flex items-center">
+                  <span class="fas fa-circle d-block"></span>
+                  <p class="text-12 ml-1">Item 3</p>
+                </li>
+              </ul>
             </div>
-            <code>
+            <code class="iframe-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Clabel%2520for%253D%2522input-validation%2522%2520class%253D%2522d-block%2520text-12%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520your%2520email%2522%250A%2520%2520%2520id%253D%2522input-validation%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%253Cp%2520id%253D%2522input-error%2522%2520class%253D%2522text-danger%2520text-center%2522%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-                class="h-28 w-full border-none d-block"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=100px&wc=true&wa=true&pv=71px&ph=98px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522d-flex%2520flex-col%2520items-center%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522d-flex%2520items-center%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-circle%2520d-block%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-12%2520ml-1%2522%253EItem%25201%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522d-flex%2520items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-circle%2520d-block%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-12%2520ml-1%2522%253EItem%25202%253C%252Fp%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522d-flex%2520items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-circle%2520d-block%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-12%2520ml-1%2522%253EItem%25203%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                class="h-34 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
             </code>
           </div>
         </article>
+
         <div class="d-flex content-between text-8">
           <a
-            href="/docs/navigation.html"
+            href="/docs/typography.html"
             class="btn btn-secondary-outlined text-white"
-            >Navigation</a
-          >
-          <a href="/docs/typography.html" class="btn btn-secondary-outlined"
             >Typography</a
+          >
+          <a href="/docs/display.html" class="btn btn-secondary-outlined"
+            >Display</a
           >
         </div>
       </section>
@@ -177,17 +174,16 @@
       <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
       <div class="py-1">
         <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
+          <i class="fab fa-github text-16 text-black mr-1"></i>
         </a>
         <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
           <i class="fab fa-linkedin text-16 text-black"></i>
         </a>
         <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
+          <i class="fab fa-twitter text-16 text-black ml-1"></i>
         </a>
       </div>
     </footer>
-    <script src="/js/input.js"></script>
     <script src="/js/docs.js"></script>
   </body>
 </html>

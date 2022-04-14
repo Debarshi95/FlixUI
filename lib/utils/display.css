@@ -64,6 +64,9 @@
 .d-grid {
   display: grid;
 }
+.d-list-item {
+  display: list-item;
+}
 
 .grid-col-1 {
   grid-template-columns: 1fr;

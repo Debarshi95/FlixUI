@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../lib/index.css" />
+    <link rel="stylesheet" href="/css/docs.css" />
+    <title>Button</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../lib/index.css" />
-  <link rel="stylesheet" href="/css/docs.css" />
-  <title>Button</title>
-</head>
+  <body>
+    <nav
+      class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary"
+    >
+      <ul>
+        <li>
+          <a href="/" class="navlink">FlixU</a>
+        </li>
+      </ul>
+      <ul class="d-flex ml-auto">
+        <li>
+          <a href="/docs/alert.html" class="navlink">Documentation</a>
+        </li>
+        <li>
+          <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
+            Github</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="min-h-screen body-container">
+      <aside
+        class="w-full divider-right sidenav text-center sticky top navbar p-1"
+      >
+        <div class="d-flex content-between">
+          <h5 class="m-none">Components</h5>
+          <span class="btn-toggle">
+            <i
+              class="fas fa-chevron-down d-inline-block pointer"
+              id="btn-toggle"
+            ></i>
+          </span>
+        </div>
+        <nav id="sidebar-nav">
+          <li>
+            <a href="/docs/typography.html" class="navlink">Typography</a>
+          </li>
+          <li>
+            <a href="/docs/alert.html" class="navlink">Alert</a>
+          </li>
+          <li>
+            <a href="/docs/avatar.html" class="navlink">Avatar</a>
+          </li>
+          <li>
+            <a href="/docs/button.html" class="navlink">Button</a>
+          </li>
+          <li>
+            <a href="/docs/badge.html" class="navlink">Badge</a>
+          </li>
+          <li>
+            <a href="/docs/card.html" class="navlink">Card</a>
+          </li>
+          <li>
+            <a href="/docs/image.html" class="navlink">Image</a>
+          </li>
+          <li>
+            <a href="/docs/modal.html" class="navlink">Modal</a>
+          </li>
+          <li>
+            <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
+          </li>
+          <li>
+            <a href="/docs/navigation.html" class="navlink">Navigation</a>
+          </li>
+          <li>
+            <a href="/docs/input.html" class="navlink">Input</a>
+          </li>
+          <li>
+            <a href="/docs/display.html" class="navlink">Display</a>
+          </li>
+          <li>
+            <a href="/docs/ratings.html" class="navlink">Ratings</a>
+          </li>
+          <li>
+            <a href="/docs/list.html" class="navlink">List</a>
+          </li>
+        </nav>
+      </aside>
+      <section id="button" class="mb-2 p-1 flex-1">
+        <header class="border-bottom">
+          <h1>Buttons</h1>
+          <p class="py-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </header>
 
-<body>
-  <nav class="d-flex items-center topnav border-b-primary-1 index-999 bg-secondary">
-    <ul>
-      <li>
-        <a href="/" class="navlink">FlixU</a>
-      </li>
-    </ul>
-    <ul class="d-flex ml-auto">
-      <li>
-        <a href="/docs/alert.html" class="navlink">Documentation</a>
-      </li>
-      <li>
-        <a href="https://github.com/Debarshi95/FlixUI" class="navlink">
-          Github</a>
-      </li>
-    </ul>
-  </nav>
-  <main class="min-h-screen body-container">
-    <aside class="w-full divider-right sidenav text-center sticky top navbar p-1">
-      <div class="d-flex content-between">
-        <h5 class="m-none">Components</h5>
-        <span class="btn-toggle">
-          <i class="fas fa-chevron-down d-inline-block pointer" id="btn-toggle"></i>
-        </span>
-      </div>
-      <nav id="sidebar-nav">
-        <li>
-          <a href="/docs/typography.html" class="navlink">Typography</a>
-        </li>
-        <li>
-          <a href="/docs/alert.html" class="navlink">Alert</a>
-        </li>
-        <li>
-          <a href="/docs/avatar.html" class="navlink">Avatar</a>
-        </li>
-        <li>
-          <a href="/docs/button.html" class="navlink">Button</a>
-        </li>
-        <li>
-          <a href="/docs/badge.html" class="navlink">Badge</a>
-        </li>
-        <li>
-          <a href="/docs/card.html" class="navlink">Card</a>
-        </li>
-        <li>
-          <a href="/docs/image.html" class="navlink">Image</a>
-        </li>
-        <li>
-          <a href="/docs/modal.html" class="navlink">Modal</a>
-        </li>
-        <li>
-          <a href="/docs/snackbar.html" class="navlink">Snackbar</a>
-        </li>
-        <li>
-          <a href="/docs/navigation.html" class="navlink">Navigation</a>
-        </li>
-        <li>
-          <a href="/docs/input.html" class="navlink">Input</a>
-        </li>
-        <li>
-          <a href="/docs/display.html" class="navlink">Display</a>
-        </li>
-        <li>
-          <a href="/docs/ratings.html" class="navlink">Ratings</a>
-        </li>
-      </nav>
-    </aside>
-    <section id="button" class="mb-2 p-1 flex-1">
-      <header class="border-bottom">
-        <h1>Buttons</h1>
-        <p class="py-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-      </header>
-
-      <article>
-        <h5 class="my-2">Basic Buttons</h5>
-        <div class="section-border">
-          <div class="d-flex content-center items-center mb-2">
-            <a href="/" class="px-2 py-1 border-rounded text-white bg-primary text-center mr-1">Link Button</a>
-            <button type="button" class="btn btn-secondary-outlined">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-          </div>
-          <code>
+        <article>
+          <h5 class="my-2">Basic Buttons</h5>
+          <div class="section-border">
+            <div class="d-flex content-center items-center mb-2">
+              <a
+                href="/"
+                class="px-2 py-1 border-rounded text-white bg-primary text-center mr-1"
+                >Link Button</a
+              >
+              <button type="button" class="btn btn-secondary-outlined">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+            <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%250A%2520%2520href%253D%2522%252F%2522%250A%2520%2520class%253D%2522px-2%2520py-1%2520border-rounded%2520text-white%2520bg-primary%2520text-center%2522%253E%250A%2520%2520Link%2520Button%250A%253C%252Fa%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary-outlined%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
                 sandbox="allow-scripts allow-same-origin"
@@ -105,22 +123,22 @@
               >
               </iframe>
             </code>
-        </div>
-      </article>
-
-      <article>
-        <h5 class="my-2">Contained Buttons</h5>
-        <div class="section-border">
-          <div class="d-flex content-center items-center flex-wrap mb-2">
-            <button class="btn btn-primary mr-1 my-1">Primary Button</button>
-            <button class="btn btn-secondary mr-1 my-1">
-              Secondary Button
-            </button>
-            <button class="btn btn-success mr-1 my-1">Success Button</button>
-            <button class="btn btn-warning mr-1 my-1">Warning Button</button>
-            <button class="btn btn-danger mr-1 my-1">Danger Button</button>
           </div>
-          <code>
+        </article>
+
+        <article>
+          <h5 class="my-2">Contained Buttons</h5>
+          <div class="section-border">
+            <div class="d-flex content-center items-center flex-wrap mb-2">
+              <button class="btn btn-primary mr-1 my-1">Primary Button</button>
+              <button class="btn btn-secondary mr-1 my-1">
+                Secondary Button
+              </button>
+              <button class="btn btn-success mr-1 my-1">Success Button</button>
+              <button class="btn btn-warning mr-1 my-1">Warning Button</button>
+              <button class="btn btn-danger mr-1 my-1">Danger Button</button>
+            </div>
+            <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520Secondary%2520Button%250A%253C%252Fbutton%253E"
                 class="h-14 w-full border-none d-block"
@@ -128,30 +146,30 @@
               >
               </iframe>
             </code>
-        </div>
-      </article>
-
-      <article>
-        <h5 class="my-2">Outlined Buttons</h5>
-        <div class="section-border">
-          <div class="d-flex content-center items-center flex-wrap mb-2">
-            <button class="btn btn-primary-outlined mr-1 my-1">
-              Primary Button
-            </button>
-            <button class="btn btn-secondary-outlined mr-1 my-1">
-              Secondary Button
-            </button>
-            <button class="btn btn-success-outlined mr-1 my-1">
-              Success Button
-            </button>
-            <button class="btn btn-warning-outlined mr-1 my-1">
-              Warning Button
-            </button>
-            <button class="btn btn-danger-outlined mr-1 my-1">
-              Danger Button
-            </button>
           </div>
-          <code>
+        </article>
+
+        <article>
+          <h5 class="my-2">Outlined Buttons</h5>
+          <div class="section-border">
+            <div class="d-flex content-center items-center flex-wrap mb-2">
+              <button class="btn btn-primary-outlined mr-1 my-1">
+                Primary Button
+              </button>
+              <button class="btn btn-secondary-outlined mr-1 my-1">
+                Secondary Button
+              </button>
+              <button class="btn btn-success-outlined mr-1 my-1">
+                Success Button
+              </button>
+              <button class="btn btn-warning-outlined mr-1 my-1">
+                Warning Button
+              </button>
+              <button class="btn btn-danger-outlined mr-1 my-1">
+                Danger Button
+              </button>
+            </div>
+            <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253E%250A%2520%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outlined%2522%253E%250A%2520%2520%2520Secondary%2520Button%250A%253C%252Fbutton%253E"
                 sandbox="allow-scripts allow-same-origin"
@@ -159,21 +177,21 @@
               >
               </iframe>
             </code>
-        </div>
-      </article>
-
-      <article>
-        <h5 class="my-2">Floating Action Button</h5>
-        <div class="section-border">
-          <div class="d-flex content-center items-center mb-2 flex-wrap">
-            <button class="btn-fav-primary mr-2">
-              <i class="fas fa-plus"></i>
-            </button>
-            <button class="btn-fav-secondary">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
           </div>
-          <code>
+        </article>
+
+        <article>
+          <h5 class="my-2">Floating Action Button</h5>
+          <div class="section-border">
+            <div class="d-flex content-center items-center mb-2 flex-wrap">
+              <button class="btn-fav-primary mr-2">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="btn-fav-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+            <code>
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=142%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-fav-primary%2522%253E%250A%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-fav-secondary%2522%253E%250A%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
                 sandbox="allow-scripts allow-same-origin"
@@ -181,29 +199,34 @@
               >
               </iframe>
             </code>
+          </div>
+        </article>
+        <div class="d-flex content-between text-8">
+          <a
+            href="/docs/avatar.html"
+            class="btn btn-secondary-outlined text-white"
+            >Avatar</a
+          >
+          <a href="/docs/badge.html" class="btn btn-secondary-outlined"
+            >Badge</a
+          >
         </div>
-      </article>
-      <div class="d-flex content-between text-8">
-        <a href="/docs/avatar.html" class="btn btn-secondary-outlined text-white">Avatar</a>
-        <a href="/docs/badge.html" class="btn btn-secondary-outlined">Badge</a>
+      </section>
+    </main>
+    <footer class="h-12 bg-secondary d-flex flex-col items-center">
+      <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
+      <div class="py-1">
+        <a href="https://github.com/Debarshi95">
+          <i class="fab fa-github text-16 text-black"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
+          <i class="fab fa-linkedin text-16 text-black"></i>
+        </a>
+        <a href="https://twitter.com/debarshib13">
+          <i class="fab fa-twitter text-16 text-black"></i>
+        </a>
       </div>
-    </section>
-  </main>
-  <footer class="h-12 bg-secondary d-flex flex-col items-center">
-    <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
-    <div class="py-1">
-      <a href="https://github.com/Debarshi95">
-        <i class="fab fa-github text-16 text-black"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
-        <i class="fab fa-linkedin text-16 text-black"></i>
-      </a>
-      <a href="https://twitter.com/debarshib13">
-        <i class="fab fa-twitter text-16 text-black"></i>
-      </a>
-    </div>
-  </footer>
-  <script src="/js/docs.js"></script>
-</body>
-
+    </footer>
+    <script src="/js/docs.js"></script>
+  </body>
 </html>

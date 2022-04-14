@@ -145,6 +145,9 @@ a {
   text-decoration: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
 .bottom-0 {
   bottom: 0;
 }
