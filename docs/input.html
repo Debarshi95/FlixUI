@@ -92,6 +92,9 @@
           <li>
             <a href="/docs/list.html" class="navlink">List</a>
           </li>
+          <li>
+            <a href="/docs/slider.html" class="navlink">Slider</a>
+          </li>
         </nav>
       </aside>
       <section id="input" class="mb-2 p-1 flex-1">
@@ -134,26 +137,23 @@
         </article>
 
         <article>
-          <h5 class="my-2">Input with Label and Validation</h5>
+          <h5 class="my-2">Range Slider</h5>
           <div class="section-border">
             <div class="d-flex items-center content-center flex-wrap mb-2">
-              <div>
-                <label for="input-validation" class="d-block text-12"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  class="input text-12"
-                  placeholder="Enter your email"
-                  id="input-validation"
-                />
-                <p id="input-error" class="text-danger text-center"></p>
-              </div>
+              <p class="text-10 mr-1">0</p>
+              <input
+                type="range"
+                name="price"
+                min="0"
+                max="999"
+                id="range-slider"
+                class="w-24 cursor-pointer"
+              />
+              <p id="range-value" class="text-10 ml-1">999</p>
             </div>
             <code>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Clabel%2520for%253D%2522input-validation%2522%2520class%253D%2522d-block%2520text-12%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520name%253D%2522email%2522%250A%2520%2520%2520class%253D%2522input%2520text-12%2522%250A%2520%2520%2520placeholder%253D%2522Enter%2520your%2520email%2522%250A%2520%2520%2520id%253D%2522input-validation%2522%250A%2520%2520%2520%252F%253E%250A%2520%2520%253Cp%2520id%253D%2522input-error%2522%2520class%253D%2522text-danger%2520text-center%2522%253E%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=69px&dsblur=100px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522d-flex%2520items-center%2520content-center%2520flex-wrap%2520mb-2%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522text-10%2520mr-1%2522%253E0%253C%252Fp%253E%250A%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520name%253D%2522price%2522%250A%2520%2520%2520%2520min%253D%25220%2522%250A%2520%2520%2520%2520max%253D%2522999%2522%250A%2520%2520%2520%2520id%253D%2522range-slider%2522%250A%2520%2520%2520%2520class%253D%2522w-24%2520cursor-pointer%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253Cp%2520id%253D%2522range-value%2522%2520class%253D%2522text-10%2520ml-1%2522%253E999%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E"
                 class="h-28 w-full border-none d-block"
                 sandbox="allow-scripts allow-same-origin"
               >

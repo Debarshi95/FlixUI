@@ -13,7 +13,8 @@
 @import "./components/image/index.css";
 @import "./components/modal/index.css";
 @import "./components/input/index.css";
-/*@import "./components/grid/index.css"; */
+@import "./components/navigation/index.css";
+@import "./components/slider/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
@@ -95,8 +96,9 @@ body.modal-open {
   min-height: 4rem;
   background-color: var(--color-black);
   color: var(--color-text-secondary);
-  top: 0;
+  top: -1px;
   max-width: 100vw;
+  z-index: 999;
 }
 
 .topnav {

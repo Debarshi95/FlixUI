@@ -1,0 +1,28 @@
+.Navigation_home {
+  display: block;
+}
+
+.Navigation_icon {
+  display: none;
+}
+.Navigation_links {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .Navigation_home {
+    display: none;
+  }
+  .Navigation_icon {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  .Navigation_icon:hover {
+    color: var(--color-primary);
+    background-color: var(--color-gray);
+    border-radius: 50%;
+  }
+  .Navigation_links {
+    display: none;
+  }
+}
