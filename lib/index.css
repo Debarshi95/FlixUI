@@ -153,6 +153,20 @@ a {
   text-decoration: none;
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
 @media screen and (min-width: 600px) {
   .navbar {
     max-height: 100vh;
