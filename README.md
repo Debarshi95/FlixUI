@@ -26,6 +26,7 @@
 - List (Normal/Stacked)
 - Text Utilities
 - Range Slider
+- Slider
 
 ## Run Locally
 
