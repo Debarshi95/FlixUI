@@ -13,7 +13,8 @@
 @import "./components/image/index.css";
 @import "./components/modal/index.css";
 @import "./components/input/index.css";
-/*@import "./components/grid/index.css"; */
+@import "./components/navigation/index.css";
+
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;

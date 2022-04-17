@@ -106,19 +106,41 @@
           <div class="section-border">
             <nav class="d-flex items-center mb-2">
               <a href="/" class="text-12 text-bold">Home</a>
-              <ul class="d-flex ml-auto">
-                <li>
-                  <a href="#link1" class="d-inline-block p-1">Link one</a>
-                </li>
-                <li class="text-white">
-                  <a href="#link2" class="bg-primary d-inline-block p-1"
-                    >Link two</a
-                  >
-                </li>
-                <li>
-                  <a href="#link3" class="d-inline-block p-1">Link three</a>
-                </li>
-              </ul>
+              <div class="d-flex ml-auto text-white">
+                <a href="#link1" class="d-inline-block p-1">Link one</a>
+                <a href="#link2" class="bg-primary d-inline-block p-1"
+                  >Link two</a
+                >
+                <a href="#link3" class="d-inline-block p-1">Link three</a>
+              </div>
+            </nav>
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cnav%2520class%253D%2522d-flex%2520items-center%2522%253E%250A%2520%2520%2520%253Ca%2520href%253D%2522%252F%2522%2520class%253D%2522text-12%2520text-bold%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%253Cul%2520class%253D%2522d-flex%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523link1%2522%2520class%253D%2522d-inline-block%2520p-1%2522%253ELink%2520one%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text-white%2522%253E%253Ca%2520href%253D%2522%2523link2%2522%2520class%253D%2522bg-primary%2520d-inline-block%2520p-1%2522%253ELink%2520two%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523link3%2522%2520class%253D%2522d-inline-block%2520p-1%2522%253ELink%2520three%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+                class="h-24 w-full border-none d-block"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </article>
+
+        <article>
+          <h5 class="my-2">Responsive Navigation</h5>
+          <div class="section-border">
+            <nav class="d-flex items-center mb-2">
+              <a href="/" class="Navigation_home text-12 text-bold">Home</a>
+              <i class="Navigation_icon fa fa-bars" id="hamburger-icon"></i>
+              <div
+                class="Navigation_links d-flex ml-auto text-white"
+                id="links"
+              >
+                <a href="#link1" class="d-inline-block p-1">Link one</a>
+                <a href="#link2" class="bg-primary d-inline-block p-1"
+                  >Link two</a
+                >
+                <a href="#link3" class="d-inline-block p-1">Link three</a>
+              </div>
             </nav>
             <code>
               <iframe
@@ -155,5 +177,6 @@
       </div>
     </footer>
     <script src="/js/docs.js"></script>
+    <script src="/js/navigation.js"></script>
   </body>
 </html>
