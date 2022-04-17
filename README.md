@@ -17,10 +17,15 @@
 - Button
 - Image
 - Modal
-- Navigation
+- Navigation (Responsive)
 - Typography
 - Input
 - HTML example for each component
+- Rating
+- Display (Grid/Flex)
+- List (Normal/Stacked)
+- Text Utilities
+- Range Slider
 
 ## Run Locally
 
