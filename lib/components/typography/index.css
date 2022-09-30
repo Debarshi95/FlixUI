@@ -4,21 +4,41 @@
 .text-secondary {
   color: var(--color-secondary);
 }
-
-.text-white {
-  color: var(--color-white);
-}
-.text-black {
-  color: var(--color-black);
-}
-.text-center {
-  text-align: center;
+.text-warning {
+  color: var(--color-warning);
 }
 
 .text-danger {
   color: var(--color-danger);
 }
 
+.text-success {
+  color: var(--color-success);
+}
+.text-black {
+  color: var(--color-black);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+.text-yellow {
+  color: var(--color-yellow);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: start;
+}
+.text-end {
+  text-align: end;
+}
 h1 {
   font-size: 2.75rem;
   margin: 0;
@@ -122,6 +142,15 @@ h6 {
 }
 .text-bold {
   font-weight: bold;
+}
+.align-center {
+  text-align: center;
+}
+.align-start {
+  text-align: start;
+}
+.align-end {
+  text-align: end;
 }
 p,
 span {

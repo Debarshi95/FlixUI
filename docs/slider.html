@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Snackbar</title>
+    <title>Slider</title>
   </head>
 
   <body>
@@ -36,7 +36,7 @@
         </li>
       </ul>
     </nav>
-    <main class="min-h-screen body-container text-black">
+    <main class="min-h-screen body-container">
       <aside
         class="w-full divider-right sidenav text-center sticky top navbar p-1"
       >
@@ -92,42 +92,36 @@
           <li>
             <a href="/docs/list.html" class="navlink">List</a>
           </li>
-          <li>
-            <a href="/docs/slider.html" class="navlink">Slider</a>
-          </li>
         </nav>
       </aside>
       <section id="alert" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Snackbar</h1>
+          <h1>Slider</h1>
+          <p class="py-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </header>
-        <article>
-          <h5 class="my-2">Basic Snackbars</h5>
-          <div class="section-border">
-            <div class="d-flex flex-wrap content-center items-center">
-              <div
-                id="snackbar-root"
-                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Primary
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
-              </div>
-            </div>
 
-            <div class="d-flex flex-wrap content-center items-center mt-1 mb-2">
-              <div
-                id="snackbar-root"
-                class="pointer bg-success text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Success
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
+        <article>
+          <h5 class="my-2">Automatic Slider</h5>
+          <div class="section-border">
+            <div class="Slider" id="slider-container">
+              <div class="slide">
+                <img src="/assets/img/slider1.jpeg" alt="Slider1" />
+              </div>
+              <div class="slide">
+                <img src="/assets/img/slider2.jpeg" alt="Slider2" />
+              </div>
+              <div class="slide">
+                <img src="/assets/img/slider3.jpeg" alt="Slider3" />
               </div>
             </div>
-            <code>
+            <code class="iframe-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
-                class="h-22 w-full border-none d-block"
+                width="500px"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=69px&dsblur=100px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522Slider%2522%2520id%253D%2522slider-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522slide%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider1.jpeg%2522%2520alt%253D%2522Slider1%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522slide%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider2.jpeg%2522%2520alt%253D%2522Slider2%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522slide%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider3.jpeg%2522%2520alt%253D%2522Slider3%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                 sandbox="allow-scripts allow-same-origin"
+                class="w-full h-24 border-none"
               >
               </iframe>
             </code>
@@ -135,41 +129,44 @@
         </article>
 
         <article>
-          <h5 class="my-2">Auto closing Snackbars</h5>
+          <h5 class="my-2">Manual Slider</h5>
           <div class="section-border">
-            <div class="d-flex flex-wrap content-center items-center">
-              <div
-                id="snackbar-auto"
-                class="pointer bg-primary text-white w-20 p-1 d-flex content-between items-center border-rounded-4"
-              >
-                Primary
-                <i class="fas fa-times-circle d-block" id="btn-snackbar"></i>
+            <div class="Slider-wrapper">
+              <div class="Slider" id="slider-container">
+                <div class="slide-manual">
+                  <img src="/assets/img/slider2.jpeg" alt="Slider1" />
+                </div>
+                <div class="slide-manual">
+                  <img src="/assets/img/slider1.jpeg" alt="Slider2" />
+                </div>
+                <div class="slide-manual">
+                  <img src="/assets/img/slider3.jpeg" alt="Slider3" />
+                </div>
               </div>
+              <a class="prev" id="prev-btn">&#10094;</a>
+              <a class="next" id="next-btn">&#10095;</a>
             </div>
-            <code>
+
+            <code class="iframe-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%250A%2520%2520id%253D%2522snackbar-root%2522%250A%2520%2520class%253D%2522pointer%2520bg-success%2520text-white%2520w-20%2520p-1%2520d-flex%2520content-between%2520items-center%2520border-%2509%2520%2520%2520%2520%2520rounded-4%2522%253E%250A%2520%2520%2520Success%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520d-block%2522%2520id%253D%2522btn-snackbar%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
-                class="h-22 w-full border-none d-block"
+                width="500px"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=69px&dsblur=100px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522Slider-wrapper%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522Slider%2522%2520id%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slide-manual%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider1.jpeg%2522%2520alt%253D%2522Slider1%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slide-manual%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider2.jpeg%2522%2520alt%253D%2522Slider2%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slide-manual%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fslider3.jpeg%2522%2520alt%253D%2522Slider3%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Ca%2520class%253D%2522prev%2522%2520id%253D%2522prev-btn%2522%253E%250A%2520%2520%2520%2520%2526%252310094%253B%250A%2520%2520%253C%252Fa%253E%250A%2520%2520%253Ca%2520class%253D%2522next%2522%2520id%253D%2522next-btn%2522%253E%250A%2520%2520%2520%2520%2526%252310095%253B%250A%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A"
                 sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=javascript&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=snackbarAuto.addEventListener%28%2522click%2522%252C%2520function%2520%28%29%2520%257B%250A%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520snackbarAuto.classList.add%28%2522d-none%2522%29%253B%250A%2520%2520%257D%252C%25205000%29%253B%250A%257D%29%253B%250A"
-                class="h-20 w-full border-none d-block"
-                sandbox="allow-scripts allow-same-origin"
+                class="w-full h-28 border-none"
               >
               </iframe>
             </code>
           </div>
         </article>
+
         <div class="d-flex content-between text-8">
           <a
-            href="/docs/modal.html"
+            href="/docs/typography.html"
             class="btn btn-secondary-outlined text-white"
-            >Modal</a
+            >Typography</a
           >
-          <a href="/docs/navigation.html" class="btn btn-secondary-outlined"
-            >Navigation</a
+          <a href="/docs/modal.html" class="btn btn-secondary-outlined"
+            >Modal</a
           >
         </div>
       </section>
@@ -188,7 +185,7 @@
         </a>
       </div>
     </footer>
-    <script src="/js/snackbar.js"></script>
     <script src="/js/docs.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

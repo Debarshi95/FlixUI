@@ -13,14 +13,16 @@
 @import "./components/image/index.css";
 @import "./components/modal/index.css";
 @import "./components/input/index.css";
-/*@import "./components/grid/index.css"; */
+@import "./components/navigation/index.css";
+@import "./components/slider/index.css";
 :root {
   --color-primary: #5d3fd3;
   --color-secondary: #8d78e0;
   --color-disabled: #beb2ed;
   --color-black: #3e4152;
   --color-white: #fff;
-
+  --color-gray: #bdbdbd;
+  --color-yellow: #ffdf00;
   --color-success: #84f1c9;
   --color-warning: #ffe7c5;
   --color-danger: #fcc5c5;
@@ -94,8 +96,9 @@ body.modal-open {
   min-height: 4rem;
   background-color: var(--color-black);
   color: var(--color-text-secondary);
-  top: 0;
+  top: -1px;
   max-width: 100vw;
+  z-index: 999;
 }
 .bottom-0 {
   bottom: 0;
@@ -128,16 +131,20 @@ body.modal-open {
 .navlink {
   text-decoration: none;
   color: inherit;
-  font-weight: 600;
   width: 100%;
   display: inline-block;
-  padding: 1rem 0;
+  padding: 0.7rem 0.5rem;
   text-align: left;
+  font-size: 0.9rem;
 }
 
 #sidebar-nav a:hover {
-  background-color: #bdbdbd;
+  background-color: var(--color-primary);
   border-radius: 4px;
+  color: var(--color-paper);
+}
+#sidebar-nav a:active {
+  background-color: var(--color-secondary);
 }
 
 ul {
@@ -153,6 +160,9 @@ a {
   text-decoration: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
 .bottom-0 {
   bottom: 0;
 }
@@ -186,5 +196,6 @@ a {
 
   .navlink {
     padding: 0.35rem 1rem;
+    font-weight: 600;
   }
 }

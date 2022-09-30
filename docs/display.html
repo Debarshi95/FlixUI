@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../lib/index.css" />
     <link rel="stylesheet" href="/css/docs.css" />
-    <title>Image</title>
+    <title>Display</title>
   </head>
 
   <body>
@@ -38,7 +38,7 @@
     </nav>
     <main class="min-h-screen body-container">
       <aside
-        class="w-full divider-right sidenav text-center index-999 sticky top navbar p-1"
+        class="w-full divider-right sidenav text-center sticky top navbar p-1"
       >
         <div class="d-flex content-between">
           <h5 class="m-none">Components</h5>
@@ -97,42 +97,84 @@
           </li>
         </nav>
       </aside>
-      <section id="image" class="mb-2 p-1 flex-1">
+      <section id="alert" class="mb-2 p-1 flex-1">
         <header class="border-bottom">
-          <h1>Image</h1>
+          <h1>Display</h1>
           <p class="py-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </header>
+
         <article>
-          <h5 class="my-2">Rouned responsive Images</h5>
+          <h5 class="my-2">Flex</h5>
           <div class="section-border">
-            <div class="p-2 d-flex content-evenly items-center">
-              <div class="image">
+            <p class="text-12 mb-1 text-center">Flex row with justify center</p>
+            <div class="d-flex content-center">
+              <div class="image p-1">
                 <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
               </div>
-              <div class="image image-rounded">
-                <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
+              <div class="image p-1">
+                <img src="/assets/img/user-2.jpg" alt="JohnDoe" />
               </div>
             </div>
-            <code>
+            <code class="iframe-container">
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=0&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=56px&ph=100px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522image%2520image-rounded%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fuser-1.jpg%2522%2520alt%253D%2522JohnDoe%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-                class="h-20 w-full border-none d-block"
+                width="500px"
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522d-flex%2520flex-row%2520content-center%2522%253E%253C%252Fdiv%253E"
                 sandbox="allow-scripts allow-same-origin"
+                class="h-14 w-full border-none d-block"
               >
               </iframe>
             </code>
           </div>
         </article>
+
+        <article>
+          <h5 class="my-2">Grid</h5>
+          <div class="section-border">
+            <p class="align-center text-12 mb-1">
+              Grid with two & three columns
+            </p>
+            <div class="d-grid grid-col-2">
+              <div class="image image-rounded mx-auto">
+                <img src="/assets/img/user-3.jpg" alt="JohnDoe" />
+              </div>
+              <div class="image image-rounded mx-auto">
+                <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
+              </div>
+            </div>
+
+            <div class="d-grid grid-col-3 my-4">
+              <div class="image image-rounded mx-auto">
+                <img src="/assets/img/user-1.jpg" alt="JohnDoe" />
+              </div>
+              <div class="image image-rounded mx-auto">
+                <img src="/assets/img/user-2.jpg" alt="JohnDoe" />
+              </div>
+              <div class="image image-rounded mx-auto">
+                <img src="/assets/img/user-3.jpg" alt="JohnDoe" />
+              </div>
+            </div>
+
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28250%2C250%2C250%2C1%29&t=one-light&wt=none&l=htmlmixed&width=&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522d-grid%2520grid-col-2%2522%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522d-grid%2520grid-col-3%2522%253E%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+                class="h-18 w-full border-none"
+              >
+              </iframe>
+            </code>
+          </div>
+        </article>
+
         <div class="d-flex content-between text-8">
           <a
-            href="/docs/card.html"
+            href="/docs/typography.html"
             class="btn btn-secondary-outlined text-white"
-            >Card</a
+            >Typography</a
           >
-          <a href="/docs/modal.html" class="btn btn-secondary-outlined"
-            >Modal</a
+          <a href="/docs/alert.html" class="btn btn-secondary-outlined"
+            >Alert</a
           >
         </div>
       </section>
@@ -141,13 +183,13 @@
       <h5 class="mt-2 text-black text-10">Made by Debarshi Bhattacharjee</h5>
       <div class="py-1">
         <a href="https://github.com/Debarshi95">
-          <i class="fab fa-github text-16 text-black"></i>
+          <i class="fab fa-github text-16 text-black mr-1"></i>
         </a>
         <a href="https://www.linkedin.com/in/debarshi-bhattacharjee-5a9289164">
           <i class="fab fa-linkedin text-16 text-black"></i>
         </a>
         <a href="https://twitter.com/debarshib13">
-          <i class="fab fa-twitter text-16 text-black"></i>
+          <i class="fab fa-twitter text-16 text-black ml-1"></i>
         </a>
       </div>
     </footer>
